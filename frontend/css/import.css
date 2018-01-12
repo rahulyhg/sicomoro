@@ -10104,6 +10104,11 @@ header {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%); }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 #fancybox-loading,
 .fancybox-close,
 .fancybox-next span,
