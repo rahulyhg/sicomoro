@@ -13,6 +13,11 @@ myApp.factory('NavigationService', function () {
         classis: "active",
         anchor: "links",
         subnav: []
+    },{
+        name: "Team",
+        classis: "active",
+        anchor: "team",
+        subnav: []
     }, {
         name: "product",
         classis: "active",

@@ -30,6 +30,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'ProductCtrl'
         })
+          .state('team', {
+            url: "/",
+            templateUrl: tempateURL,
+            controller: 'TeamCtrl'
+        })
         .state('links', {
             url: "/links",
             templateUrl: tempateURL,
