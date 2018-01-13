@@ -1,8 +1,11 @@
-.map-contact {
-    position: relative;
+.address {
+    flex: 0.3;
 }
 
-.address {
-    position: absolute;
-    top: 0;
+.address-line {
+    padding: 30px 80px
+}
+
+.map-contact {
+    flex: 0.7;
 }

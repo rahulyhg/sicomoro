@@ -135,15 +135,58 @@ header {
     transform: translateY(-100%);
 }
 
-//scss for product page start 
+//common classes used
 .d-flex {
     display: flex;
 }
 
-// .width-800 {
-//     width: 500px;
-// }
-// .width-200 {
-//     width: 500px;
-// }
-//end of product page end
+p {
+    font-family: 'Nunito';
+    font-size: 18px;
+    color: white;
+}
+
+.width-20 {
+    flex: 0.2;
+}
+
+.width-80 {
+    flex: 0.8;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.section-padding {
+    padding: 0px 80px;
+}
+
+//end of common classes
+//scss for directive
+.heading-bg {
+    background: url("../img/title-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 299px;
+    display: table;
+    width: 100%;
+}
+
+.title-main {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Geometria-ExtraBold';
+    h1 {
+        font-size: 100px;
+        opacity: 0.5;
+    }
+}
+
+.img-auto {
+    margin: 0 auto;
+}
+
+//end of scss for directive

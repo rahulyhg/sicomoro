@@ -10121,6 +10121,67 @@ header {
   display: -ms-flexbox;
   display: flex; }
 
+p {
+  font-family: 'Nunito';
+  font-size: 18px;
+  color: white; }
+
+.width-20 {
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2; }
+
+.width-80 {
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8; }
+
+.align-item-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.section-padding {
+  padding: 0px 80px; }
+
+.heading-bg {
+  background: url("../img/title-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 299px;
+  display: table;
+  width: 100%; }
+
+.title-main {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Geometria-ExtraBold'; }
+  .title-main h1 {
+    font-size: 100px;
+    opacity: 0.5; }
+
+.img-auto {
+  margin: 0 auto; }
+
+.address {
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3; }
+
+.address-line {
+  padding: 30px 80px; }
+
+.map-contact {
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7; }
+
+.mission-bg {
+  background-color: #6d6e70;
+  border-bottom: 2px solid #8a8b8d; }
+
 #fancybox-loading,
 .fancybox-close,
 .fancybox-next span,

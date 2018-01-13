@@ -2,7 +2,7 @@ myApp.controller('AboutCtrl', function ($scope, TemplateService, NavigationServi
     $scope.template = TemplateService.getHTML("content/about/about.html");
     TemplateService.title = "Aboutus"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
-    $scope.title = "Aboutus";
+    $scope.title = "About us";
     $scope.submitForm = function (data) {
         console.log("This is it");
         return new Promise(function (callback) {

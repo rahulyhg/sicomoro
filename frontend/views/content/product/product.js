@@ -2,7 +2,7 @@ myApp.controller('ProductCtrl', function ($scope, TemplateService, NavigationSer
     $scope.template = TemplateService.getHTML("content/product/product.html");
     TemplateService.title = "Product"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
-
+    $scope.title = "Product";
     $scope.submitForm = function (data) {
         console.log("This is it");
         return new Promise(function (callback) {
