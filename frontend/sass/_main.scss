@@ -10,6 +10,21 @@ $brand-info: #000072 !default;
 /* Bootstrap Variables Goes Here */
 
 @import "other/font-fix";
+@font-face {
+    font-family: 'Geometria-ExtraBold';
+    src: url("../fonts/Geometria-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url("../fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Nunito-SemiBold';
+    src: url("../fonts/Nunito-SemiBold.ttf");
+}
+
 body {
     padding-top: 70px;
 }
