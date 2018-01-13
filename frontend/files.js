@@ -50,6 +50,7 @@ module.exports = [
   'frontend/js/controllers/product.js',
   'frontend/js/controllers/mission-vission.js',
   'frontend/js/controllers/team.js',
+  'frontend/js/controllers/aboutus.js',
   'frontend/js/controllers/header-controller.js',
   'frontend/js/controllers/language-controller.js',
 ];

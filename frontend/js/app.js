@@ -40,6 +40,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'MissionandVissionCtrl'
         })
+        .state('aboutus', {
+            url: "/",
+            templateUrl: tempateURL,
+            controller: 'AboutusCtrl'
+        })
         .state('links', {
             url: "/links",
             templateUrl: tempateURL,
