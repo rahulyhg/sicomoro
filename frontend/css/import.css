@@ -10123,7 +10123,9 @@ header {
 
 p {
   font-family: 'Nunito';
-  font-size: 18px;
+  font-size: 18px; }
+
+.color-white {
   color: white; }
 
 .width-20 {
@@ -10136,13 +10138,27 @@ p {
       -ms-flex: 0.8;
           flex: 0.8; }
 
+.width-40 {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4; }
+
 .align-item-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
 
 .section-padding {
-  padding: 0px 80px; }
+  padding: 25px 150px; }
+
+.text-align-last {
+  text-align-last: right; }
+
+.img-auto {
+  margin: 0 auto; }
+
+.margin-clear {
+  margin: 0; }
 
 .heading-bg {
   background: url("../img/title-bg.jpg");
@@ -10159,11 +10175,15 @@ p {
   vertical-align: middle;
   font-family: 'Geometria-ExtraBold'; }
   .title-main h1 {
-    font-size: 100px;
-    opacity: 0.5; }
+    font-size: 80px;
+    opacity: 0.8;
+    letter-spacing: -5px; }
 
-.img-auto {
-  margin: 0 auto; }
+.img-right-padding {
+  padding: 0px 0px 0px 25px; }
+
+.img-left-padding {
+  padding: 0px 25px 0px 0px; }
 
 .address {
   -webkit-box-flex: 0.3;
@@ -10181,6 +10201,42 @@ p {
 .mission-bg {
   background-color: #6d6e70;
   border-bottom: 2px solid #8a8b8d; }
+  .mission-bg h3 {
+    margin-top: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Geometria-ExtraBold'; }
+  .mission-bg p {
+    font-weight: bold; }
+
+.mission-top-text {
+  padding: 20px 150px 20px 150px; }
+
+.product-bg {
+  background-color: #94856e;
+  border-bottom: 2px solid #a99d8b; }
+  .product-bg h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Geometria-ExtraBold'; }
+  .product-bg p {
+    font-weight: bold; }
+
+.team-padding {
+  padding: 25px 50px; }
+
+.team-main p {
+  font-weight: 600; }
+
+.text-associate h3 {
+  font-size: 32px;
+  font-family: 'Geometria-ExtraBold';
+  font-weight: 600; }
+
+.team-member-name h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: 'Geometria-ExtraBold'; }
 
 #fancybox-loading,
 .fancybox-close,

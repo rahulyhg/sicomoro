@@ -1,4 +1,17 @@
 .mission-bg {
     background-color: #6d6e70;
     border-bottom: 2px solid #8a8b8d;
+    h3 {
+        margin-top: 0;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-family: 'Geometria-ExtraBold';
+    }
+    p {
+        font-weight: bold;
+    }
+}
+
+.mission-top-text {
+    padding: 20px 150px 20px 150px;
 }

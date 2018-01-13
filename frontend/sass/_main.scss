@@ -143,6 +143,9 @@ header {
 p {
     font-family: 'Nunito';
     font-size: 18px;
+}
+
+.color-white {
     color: white;
 }
 
@@ -154,12 +157,28 @@ p {
     flex: 0.8;
 }
 
+.width-40 {
+    flex: 0.4;
+}
+
 .align-item-center {
     align-items: center;
 }
 
 .section-padding {
-    padding: 0px 80px;
+    padding: 25px 150px;
+}
+
+.text-align-last {
+    text-align-last: right;
+}
+
+.img-auto {
+    margin: 0 auto;
+}
+
+.margin-clear {
+    margin: 0;
 }
 
 //end of common classes
@@ -180,13 +199,20 @@ p {
     vertical-align: middle;
     font-family: 'Geometria-ExtraBold';
     h1 {
-        font-size: 100px;
-        opacity: 0.5;
+        font-size: 80px;
+        opacity: 0.8;
+        letter-spacing: -5px;
     }
 }
 
-.img-auto {
-    margin: 0 auto;
+//end of scss for directive
+//common for mission-vision and product page
+.img-right-padding {
+    padding: 0px 0px 0px 25px;
 }
 
-//end of scss for directive
+.img-left-padding {
+    padding: 0px 25px 0px 0px
+}
+
+//end of common for mission-vision and product page
