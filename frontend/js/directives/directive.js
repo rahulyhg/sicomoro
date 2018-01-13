@@ -76,7 +76,12 @@ myApp.directive('img', function ($compile, $parse) {
             }
         };
     })
-
+    .directive('heading', function ($http, $filter) {
+        return {
+            templateUrl: 'views/directive/first-heading.html',
+            link: function ($scope, element, attrs) {}
+        };
+    })
 
     .directive('replace', function () {
         return {
@@ -100,7 +105,4 @@ myApp.directive('img', function ($compile, $parse) {
                 });
             }
         };
-    })
-
-
-;
+    });
