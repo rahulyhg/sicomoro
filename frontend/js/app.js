@@ -30,10 +30,15 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'ProductCtrl'
         })
-          .state('team', {
+        .state('team', {
             url: "/",
             templateUrl: tempateURL,
             controller: 'TeamCtrl'
+        })
+        .state('missionandvission', {
+            url: "/",
+            templateUrl: tempateURL,
+            controller: 'MissionandVissionCtrl'
         })
         .state('links', {
             url: "/links",

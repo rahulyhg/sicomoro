@@ -14,4 +14,4 @@ myApp.controller('ProductCtrl', function ($scope, TemplateService, NavigationSer
 
 
 
-})
+});
