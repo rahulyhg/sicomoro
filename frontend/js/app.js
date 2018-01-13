@@ -26,34 +26,34 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             controller: 'HomeCtrl'
         })
         .state('product', {
-            url: "/",
+            url: "/product",
             templateUrl: tempateURL,
             controller: 'ProductCtrl'
         })
         .state('team', {
-            url: "/",
+            url: "/team",
             templateUrl: tempateURL,
             controller: 'TeamCtrl'
         })
         .state('missionandvission', {
-            url: "/",
+            url: "/mission_vission",
             templateUrl: tempateURL,
             controller: 'MissionandVissionCtrl'
         })
         .state('aboutus', {
-            url: "/",
+            url: "/aboutus",
             templateUrl: tempateURL,
             controller: 'AboutusCtrl'
         })
         .state('career', {
-            url: "/",
+            url: "/career",
             templateUrl: tempateURL,
             controller: 'CareerCtrl'
         })
-        .state('links', {
-            url: "/links",
+        .state('contactus', {
+            url: "/contactus",
             templateUrl: tempateURL,
-            controller: 'LinksCtrl'
+            controller: 'ContactusCtrl'
         });
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);

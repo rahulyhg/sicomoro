@@ -52,6 +52,7 @@ module.exports = [
   'frontend/js/controllers/team.js',
   'frontend/js/controllers/aboutus.js',
   'frontend/js/controllers/career.js',
+  'frontend/js/controllers/contact.js',
   'frontend/js/controllers/header-controller.js',
   'frontend/js/controllers/language-controller.js',
 ];
