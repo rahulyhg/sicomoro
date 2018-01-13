@@ -40,20 +40,20 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'MissionandVissionCtrl'
         })
-        .state('aboutus', {
-            url: "/aboutus",
+        .state('about', {
+            url: "/about",
             templateUrl: tempateURL,
-            controller: 'AboutusCtrl'
+            controller: 'AboutCtrl'
         })
         .state('career', {
             url: "/career",
             templateUrl: tempateURL,
             controller: 'CareerCtrl'
         })
-        .state('contactus', {
-            url: "/contactus",
+        .state('contact', {
+            url: "/contact",
             templateUrl: tempateURL,
-            controller: 'ContactusCtrl'
+            controller: 'ContactCtrl'
         });
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
