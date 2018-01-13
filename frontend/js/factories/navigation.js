@@ -3,20 +3,16 @@ myApp.factory('NavigationService', function () {
         name: "Home",
         classis: "active",
         anchor: "home",
-        subnav: [{
-            name: "Subnav1",
-            classis: "active",
-            anchor: "home"
-        }]
+        subnav: []
     }, {
         name: "Team",
         classis: "active",
         anchor: "team",
         subnav: []
     }, {
-        name: "Mission and Vission",
+        name: "Mission and Vision",
         classis: "active",
-        anchor: "missionandvission",
+        anchor: "mission-vision",
         subnav: []
     }, {
         name: "About Us",
