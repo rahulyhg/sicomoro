@@ -46,13 +46,14 @@ module.exports = [
   'frontend/js/factories/api.js',
 
   // Contorllers
+  'frontend/views/home/home.js',
+  'frontend/views/product/product.js',
+  'frontend/views/mission-vission/mission-vission.js',
+  'frontend/views/team/team.js',
+  'frontend/views/about/about.js',
+  'frontend/views/career/career.js',
+  'frontend/views/contact/contact.js',
   'frontend/js/controllers/controller.js',
-  'frontend/js/controllers/product.js',
-  'frontend/js/controllers/mission-vission.js',
-  'frontend/js/controllers/team.js',
-  'frontend/js/controllers/aboutus.js',
-  'frontend/js/controllers/career.js',
-  'frontend/js/controllers/contact.js',
   'frontend/js/controllers/header-controller.js',
   'frontend/js/controllers/language-controller.js',
 ];

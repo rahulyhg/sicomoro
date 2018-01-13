@@ -1,6 +1,6 @@
-myApp.controller('CareerCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
-    $scope.template = TemplateService.getHTML("content/career.html");
-    TemplateService.title = "Career"; //This is the Title of the Website
+myApp.controller('ContactCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+    $scope.template = TemplateService.getHTML("content/contact/contact.html");
+    TemplateService.title = "Contact Us"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
 
     $scope.submitForm = function (data) {

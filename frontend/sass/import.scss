@@ -12,6 +12,14 @@
  /****** Please Import Libraries Above This!!!!!! ******/
 
  @import "main";
+ @import "frontend/views/home/home";
+ @import "frontend/views/about/about";
+ @import "frontend/views/contact/contact";
+ @import "frontend/views/mission-vision/mission-vision";
+ @import "frontend/views/career/career";
+ @import "frontend/views/product/product";
+ @import "frontend/views/team/team";
+ 
  @import "other/fancybox-override";
  @import "responsive/lg";
  @import "responsive/md";

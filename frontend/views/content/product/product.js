@@ -1,5 +1,5 @@
 myApp.controller('ProductCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
-    $scope.template = TemplateService.getHTML("content/product.html");
+    $scope.template = TemplateService.getHTML("content/product/product.html");
     TemplateService.title = "Product"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
 
