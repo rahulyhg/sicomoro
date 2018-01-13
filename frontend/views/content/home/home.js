@@ -1,4 +1,4 @@
-myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $window, $http) {
     $scope.template = TemplateService.getHTML("content/home/home.html");
     TemplateService.title = "Home"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
@@ -11,7 +11,9 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             }, 5000);
         });
     };
-
+    $scope.model = {
+        name: 'Tabs'
+    };
 
 
 })
