@@ -10337,6 +10337,23 @@ a.color-black {
     -webkit-transition: all ease 300ms;
     transition: all ease 300ms; }
 
+.custom-tabs ul {
+  border-width: 0; }
+  .custom-tabs ul li a {
+    color: #fff; }
+  .custom-tabs ul .nav-tabs-justified > .active > a, .custom-tabs ul .nav-tabs.nav-justified > .active > a,
+  .custom-tabs ul .nav-tabs.nav-justified > .active > a,
+  .custom-tabs ul .nav-tabs-justified > .active > a:hover,
+  .custom-tabs ul .nav-tabs.nav-justified > .active > a:hover,
+  .custom-tabs ul .nav-tabs.nav-justified > .active > a:hover,
+  .custom-tabs ul .nav-tabs-justified > .active > a:focus,
+  .custom-tabs ul .nav-tabs.nav-justified > .active > a:focus,
+  .custom-tabs ul .nav-tabs.nav-justified > .active > a:focus {
+    background: transparent;
+    color: #fff;
+    border-width: 0;
+    border-bottom: 1px solid #fff; }
+
 #particles-js {
   background: #000;
   min-height: 100vh; }

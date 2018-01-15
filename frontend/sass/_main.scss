@@ -423,3 +423,26 @@ a.color-black {
 }
 
 //end of common for mission-vision and product page
+
+//tabs
+.custom-tabs {
+    ul {
+        border-width: 0;
+        li {
+            a {
+                color: #fff;
+            }
+        }
+        .nav-tabs-justified>.active>a,
+        .nav-tabs.nav-justified>.active>a,
+        .nav-tabs-justified>.active>a:hover,
+        .nav-tabs.nav-justified>.active>a:hover,
+        .nav-tabs-justified>.active>a:focus,
+        .nav-tabs.nav-justified>.active>a:focus {
+            background: transparent;
+            color: #fff;
+            border-width: 0;
+            border-bottom: 1px solid #fff;
+        }
+    }
+}

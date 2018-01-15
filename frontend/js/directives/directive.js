@@ -38,7 +38,7 @@ myApp.directive('img', function ($compile, $parse) {
         };
     })
 
-    .directive('firstHeading', function ($http, $filter) {
+    .directive('headingFirst', function ($http, $filter) {
         return {
             templateUrl: 'views/directive/first-heading.html',
             link: function ($scope, element, attrs) {}
