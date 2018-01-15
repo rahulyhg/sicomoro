@@ -10514,6 +10514,9 @@ a.color-black {
   font-size: 24px;
   color: black; }
 
+.career-description {
+  margin: 50px 0 0 0; }
+
 .product-bg {
   background-color: #94856e;
   border-bottom: 2px solid #a99d8b; }
