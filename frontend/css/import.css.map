@@ -180,7 +180,7 @@
 		"../views/content/home/_home.scss",
 		"../views/content/about/_about.scss",
 		"../views/content/contact/_contact.scss",
-		"../views/content/mission-vission/_mission-vision.scss",
+		"../views/content/mission-vision/_mission-vision.scss",
 		"../views/content/career/_career.scss",
 		"../views/content/product/_product.scss",
 		"../views/content/team/_team.scss",

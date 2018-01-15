@@ -49,7 +49,7 @@ module.exports = [
   // Contorllers
   'frontend/views/content/home/home.js',
   'frontend/views/content/product/product.js',
-  'frontend/views/content/mission-vission/mission-vission.js',
+  'frontend/views/content/mission-vision/mission-vision.js',
   'frontend/views/content/team/team.js',
   'frontend/views/content/about/about.js',
   'frontend/views/content/career/career.js',
