@@ -16,6 +16,11 @@ $color-white:#fff;
     font-family: 'Geometria-ExtraBold';
     src: url("../fonts/Geometria-ExtraBold.otf");
 }
+@font-face {
+    font-family: 'Geometria-Bold';
+    src: url("../fonts/Geometria-Bold.otf");
+}
+
 
 @font-face {
     font-family: 'Geometria';
@@ -31,6 +36,7 @@ $color-white:#fff;
     font-family: 'Geometria-Medium';
     src: url("../fonts/Geometria-Medium.otf");
 }
+
 
 @font-face {
     font-family: 'Nunito';
@@ -144,6 +150,7 @@ nav li:hover .dropdown-menu {
         @include transform (translateY(0));
     }
 }
+
 
 #map img {
     opacity: 1;
@@ -283,9 +290,8 @@ a.color-black {
 .width-80 {
     flex: 0.8;
 }
-
-.width-40 {
-    flex: 0.4;
+.width-50 {
+    flex: 0.5;
 }
 
 .align-item-center {
