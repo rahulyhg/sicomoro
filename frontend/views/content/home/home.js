@@ -12,6 +12,13 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         });
     };
 
+    $scope.section = {
+        one: "/views/content/home/sections/main.html",
+        two: "/views/content/home/sections/mission-vision.html",
+        three: "/views/content/home/sections/team.html",
+        four: "/views/content/home/sections/product-offering.html",
+    };
+
     $timeout(function () {
         particlesJS.load('particles-js', '../../js/json/particles.json', function () {
             console.log('callback - particles.js config loaded');

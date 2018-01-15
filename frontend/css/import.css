@@ -10355,8 +10355,9 @@ a.color-black {
     border-width: 0; }
     .custom-tabs ul.nav-tabs li a {
       color: #fff;
+      text-transform: uppercase;
       font-size: 20px;
-      padding: 10px 20px; }
+      padding: 10px 15px; }
   .custom-tabs .nav-tabs > li.active > a,
   .custom-tabs .nav-tabs > li.active > a:hover,
   .custom-tabs .nav-tabs > li.active > a:focus,
@@ -10373,7 +10374,7 @@ a.color-black {
       top: 130px; }
       .custom-tabs .custom-tabs-content .title-tab h4 {
         font-family: 'Geometria-ExtraBold';
-        font-size: 50px;
+        font-size: 42px;
         opacity: 0.3; }
     .custom-tabs .custom-tabs-content .pad-cont {
       padding: 20px 10px; }

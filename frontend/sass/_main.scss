@@ -438,7 +438,6 @@ a.color-black {
 
 //end of common for mission-vision and product page
 //tabs
-//tabs
 .custom-tabs {
     padding: 20px 0;
     ul.nav-tabs {
@@ -446,11 +445,13 @@ a.color-black {
         li {
             a {
                 color: #fff;
+                text-transform: uppercase;
                 font-size: 20px;
-                padding: 10px 20px;
+                padding: 10px 15px;
             }
         }
     }
+    
     .nav-tabs>li.active>a,
     .nav-tabs>li.active>a:hover,
     .nav-tabs>li.active>a:focus,
@@ -468,7 +469,7 @@ a.color-black {
             top: 130px;
             h4 {
                 font-family: 'Geometria-ExtraBold';
-                font-size: 50px;
+                font-size: 42px;
                 opacity: 0.3;
             }
         }
