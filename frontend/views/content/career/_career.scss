@@ -50,13 +50,13 @@
         padding: 0 25px !important;
         color: black;
     }
-    select {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) #fff no-repeat 98.5%!important;
-        background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) #fff no-repeat calc(100% - 10px)!important;
-    }
+    // select {
+    //     -webkit-appearance: none;
+    //     -moz-appearance: none;
+    //     appearance: none;
+    //     background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) #fff no-repeat 98.5%!important;
+    //     background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) #fff no-repeat calc(100% - 10px)!important;
+    // }
 }
 
 .career-btn {
@@ -77,4 +77,13 @@
 
 .career-btn-main {
     margin-top: 25px;
+}
+.career-heading p{
+      font-family: 'Geometria-Medium';
+    font-size: 30px;;
+}
+.personal-info p{
+    font-family: 'Geometria-Medium';
+    font-size: 24px;
+    color: black;
 }

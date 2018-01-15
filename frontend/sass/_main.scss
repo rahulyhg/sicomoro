@@ -16,16 +16,26 @@ $color-white:#fff;
     font-family: 'Geometria-ExtraBold';
     src: url("../fonts/Geometria-ExtraBold.otf");
 }
+
 @font-face {
     font-family: 'Geometria';
     src: url("../fonts/Geometria.otf");
 }
 
 @font-face {
+    font-family: 'Geometria-Heavy';
+    src: url("../fonts/Geometria-Heavy.otf");
+}
+
+@font-face {
+    font-family: 'Geometria-Medium';
+    src: url("../fonts/Geometria-Medium.otf");
+}
+
+@font-face {
     font-family: 'Nunito';
     src: url("../fonts/Nunito-Regular.ttf");
 }
-
 @font-face {
     font-family: 'Nunito-SemiBold';
     src: url("../fonts/Nunito-SemiBold.ttf");
@@ -106,6 +116,7 @@ nav li:hover .dropdown-menu {
         }
     }
 }
+
 
 .sidemenu {
     background: #000;
