@@ -1,0 +1,27 @@
+.upload-resume {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.career-form {
+    .form-control {
+        border-radius: 5px;
+    }
+}
+
+.upload-resume .form-group {
+    opacity: 0;
+}
+
+.upload-main {
+    position: relative;
+}
+
+.upload-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+}
