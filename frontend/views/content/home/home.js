@@ -11,9 +11,11 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             }, 5000);
         });
     };
-    $scope.model = {
-        name: 'Tabs'
-    };
 
+    $timeout(function () {
+        particlesJS.load('particles-js', '../../js/json/particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    }, 100);
 
 })

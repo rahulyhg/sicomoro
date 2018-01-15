@@ -5,6 +5,7 @@ $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
+$color-white:#fff;
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 /* Bootstrap Variables Goes Here */
@@ -26,7 +27,8 @@ $brand-info: #000072 !default;
 }
 
 body {
-    padding-top: 70px;
+    font-family: 'Nunito';
+    font-size: 18px;
 }
 
 img.loading {
@@ -45,8 +47,86 @@ img.doneLoading {
     opacity: 1;
 }
 
+//menu 
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
 nav li:hover .dropdown-menu {
     display: block;
+}
+
+.hamburger {
+    margin: 16px 0;
+    position: relative;
+    cursor: pointer;
+    @include transition (all ease 300ms);
+    font-family: Nunito-SemiBold;
+    &:hover {
+        opacity: 0.8;
+    }
+    .menu-title {
+        padding-right: 22px;
+        font-size: 20px;
+        line-height: 0.6;
+    }
+    .menu-line {
+        position: absolute;
+        right: 0;
+        top: 0;
+        span {
+            @include size(18px,
+            2px);
+            margin-bottom: 3px;
+            display: block;
+            border-radius: 5px;
+            background-color: $color-white;
+            @include transition (all ease 300ms);
+            &.third-line {
+                width: 10px;
+                float: right;
+            }
+            &.firstbar {
+                @include transform(translate(0px,
+                6px)rotate(50deg));
+            }
+            &.secondbar {
+                @include transform(translate(0px,
+                1px) rotate(-50deg));
+            }
+            &.thirdbar {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.sidemenu {
+    background: #000;
+    padding: 50px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    @include transition (all ease 300ms);
+    @include transform (translateY(-100%));
+    z-index: 5;
+    ul li a {
+        color: $color-white;
+        font-family: Nunito-SemiBold;
+        padding: 15px;
+        display: block;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        &:hover {
+            color: darken($color-white, 20%);
+            text-decoration: none;
+        }
+    }
+    &.menu-in {
+        @include transform (translateY(0));
+    }
 }
 
 #map img {
@@ -57,15 +137,29 @@ a,
 .btn,
 [ui-sref] {
     cursor: pointer;
-    transition: all ease 300ms;
+    @include transition(all ease 300ms);
 }
 
 footer {
-    font-size: 12px;
-    background-color: #eee;
-    padding: 10px 0;
-    p {
-        margin: 0;
+    font-size: 16px;
+    background-color: #000;
+    padding: 20px 0;
+    .footer-menu ul li {
+        @extend .inline-block;
+        a {
+            padding: 0 15px;
+        }
+    }
+    a {
+        color: $color-white;
+        @include transition (all ease 300ms);
+        &:hover {
+            text-decoration: none;
+            color: darken($color-white, 20%);
+        }
+    }
+    .fnt-12 {
+        font-size: 12px;
     }
 }
 
@@ -127,17 +221,9 @@ footer {
     display: block;
 }
 
-header {
-    transition: all 300ms ease;
-}
-
-.nav-up {
-    transform: translateY(-100%);
-}
-
 //common classes used
-.d-flex {
-    display: flex;
+.inline-block {
+    display: inline-block;
 }
 
 p {
@@ -145,8 +231,33 @@ p {
     font-size: 18px;
 }
 
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 .color-white {
-    color: white;
+    color: $color-white;
+}
+
+a.color-white {
+    color: $color-white;
+    &:hover {
+        color: darken($color-white, 20%);
+    }
+}
+
+a.color-black {
+    color: #000;
+    &:hover {
+        color: lighten(#000, 20%);
+    }
+}
+
+//.flex
+.d-flex {
+    display: flex;
 }
 
 .width-20 {
@@ -198,11 +309,30 @@ p {
     display: table-cell;
     vertical-align: middle;
     font-family: 'Geometria-ExtraBold';
-    h1 {
+    h3 {
         font-size: 80px;
         opacity: 0.8;
         letter-spacing: -5px;
     }
+}
+
+//min-height 100vh
+.min-full-height {
+    min-height: 100vh;
+}
+
+//relative
+.post-rel {
+    position: relative;
+}
+
+//left title
+.left-title {
+    position: absolute;
+    @include transform(rotate(-90deg));
+    top: 20%;
+    left: 20px;
+    font-family: Nunito-SemiBold;
 }
 
 //end of scss for directive
@@ -213,6 +343,67 @@ p {
 
 .img-left-padding {
     padding: 0px 25px 0px 0px
+}
+
+.strike-anchor {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Geometria-ExtraBold;
+    &.color-white {
+        &:before,
+        &:after {
+            background: $color-white;
+        }
+    }
+    &.color-black {
+        &:before,
+        &:after {
+            background: #000;
+        }
+    }
+    
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        top: 50%;
+        margin-top: -0.5px;
+        @include transition (all ease 300ms);
+    }
+    &:before {
+        left: -1.5px;
+        width: 105%;
+        @include transition(width 0.5s cubic-bezier(0.22,
+        0.61,
+        0.36,
+        1) all ease 300ms);
+    }
+    &:after {
+        right: 2.5px;
+        @include transition(width 0.8s cubic-bezier(0.22,
+        0.61,
+        0.36,
+        1));
+    }
+    &:hover {
+        text-decoration: none;
+        color: darken($color-white, 20%);
+    }
+    &:hover:before {
+        width: 0;
+        @include transition(width 0.5s cubic-bezier(0.22,
+        0.61,
+        0.36,
+        1));
+    }
+    &:hover:after {
+        background: transparent;
+        width: 100%;
+        @include transition(all ease 300ms);
+    }
 }
 
 //end of common for mission-vision and product page

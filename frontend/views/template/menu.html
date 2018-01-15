@@ -1,11 +1,11 @@
-<ul class="list-inline">
+<ul class="list-unstyled text-center">
   <li ng-repeat="menu in navigation" ui-sref-active="active">
-    <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor">{{menu.name}}</a>
-    <a href="{{menu.link}}" ng-if="menu.link">{{menu.name}}</a>
+    <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor" class="text-uppercase">{{menu.name}}</a>
+    <a href="{{menu.link}}" ng-if="menu.link" class="text-uppercase">{{menu.name}}</a>
     <ul class="dropdown-menu" ng-if="menu.subnav!='';">
       <li ng-repeat="submenu in menu.subnav" ui-sref-active="active">
-        <a ui-serf="{{submenu.anchor}}" ng-if="submenu.anchor">{{submenu.name}}</a>
-        <a herf="{{submenu.link}}" ng-if="submenu.link">{{submenu.name}}</a>
+        <a ui-serf="{{submenu.anchor}}" ng-if="submenu.anchor" class="text-uppercase">{{submenu.name}}</a>
+        <a herf="{{submenu.link}}" ng-if="submenu.link" class="text-uppercase">{{submenu.name}}</a>
       </li>
     </ul>
   </li>

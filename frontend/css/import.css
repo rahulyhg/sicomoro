@@ -10024,7 +10024,8 @@ button.close {
   src: url("../fonts/Nunito-SemiBold.ttf"); }
 
 body {
-  padding-top: 70px; }
+  font-family: 'Nunito';
+  font-size: 18px; }
 
 img.loading {
   text-align: center;
@@ -10040,8 +10041,76 @@ img {
 img.doneLoading {
   opacity: 1; }
 
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent; }
+
 nav li:hover .dropdown-menu {
   display: block; }
+
+.hamburger {
+  margin: 16px 0;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
+  font-family: Nunito-SemiBold; }
+  .hamburger:hover {
+    opacity: 0.8; }
+  .hamburger .menu-title {
+    padding-right: 22px;
+    font-size: 20px;
+    line-height: 0.6; }
+  .hamburger .menu-line {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .hamburger .menu-line span {
+      width: 18px;
+      height: 2px;
+      margin-bottom: 3px;
+      display: block;
+      border-radius: 5px;
+      background-color: #fff;
+      -webkit-transition: all ease 300ms;
+      transition: all ease 300ms; }
+      .hamburger .menu-line span.third-line {
+        width: 10px;
+        float: right; }
+      .hamburger .menu-line span.firstbar {
+        -webkit-transform: translate(0px, 6px) rotate(50deg);
+        transform: translate(0px, 6px) rotate(50deg); }
+      .hamburger .menu-line span.secondbar {
+        -webkit-transform: translate(0px, 1px) rotate(-50deg);
+        transform: translate(0px, 1px) rotate(-50deg); }
+      .hamburger .menu-line span.thirdbar {
+        opacity: 0; }
+
+.sidemenu {
+  background: #000;
+  padding: 50px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  z-index: 5; }
+  .sidemenu ul li a {
+    color: #fff;
+    font-family: Nunito-SemiBold;
+    padding: 15px;
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+    .sidemenu ul li a:hover {
+      color: #cccccc;
+      text-decoration: none; }
+  .sidemenu.menu-in {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
 
 #map img {
   opacity: 1; }
@@ -10054,11 +10123,20 @@ a,
   transition: all ease 300ms; }
 
 footer {
-  font-size: 12px;
-  background-color: #eee;
-  padding: 10px 0; }
-  footer p {
-    margin: 0; }
+  font-size: 16px;
+  background-color: #000;
+  padding: 20px 0; }
+  footer .footer-menu ul li a {
+    padding: 0 15px; }
+  footer a {
+    color: #fff;
+    -webkit-transition: all ease 300ms;
+    transition: all ease 300ms; }
+    footer a:hover {
+      text-decoration: none;
+      color: #cccccc; }
+  footer .fnt-12 {
+    font-size: 12px; }
 
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
@@ -10108,25 +10186,33 @@ footer {
   width: 100%;
   display: block; }
 
-header {
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease; }
-
-.nav-up {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%); }
-
-.d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.inline-block, footer .footer-menu ul li {
+  display: inline-block; }
 
 p {
   font-family: 'Nunito';
   font-size: 18px; }
 
+a:hover {
+  text-decoration: none; }
+
 .color-white {
-  color: white; }
+  color: #fff; }
+
+a.color-white {
+  color: #fff; }
+  a.color-white:hover {
+    color: #cccccc; }
+
+a.color-black {
+  color: #000; }
+  a.color-black:hover {
+    color: #333333; }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .width-20 {
   -webkit-box-flex: 0.2;
@@ -10174,16 +10260,117 @@ p {
   display: table-cell;
   vertical-align: middle;
   font-family: 'Geometria-ExtraBold'; }
-  .title-main h1 {
+  .title-main h3 {
     font-size: 80px;
     opacity: 0.8;
     letter-spacing: -5px; }
+
+.min-full-height {
+  min-height: 100vh; }
+
+.post-rel {
+  position: relative; }
+
+.left-title {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  top: 20%;
+  left: 20px;
+  font-family: Nunito-SemiBold; }
 
 .img-right-padding {
   padding: 0px 0px 0px 25px; }
 
 .img-left-padding {
   padding: 0px 25px 0px 0px; }
+
+.strike-anchor {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Geometria-ExtraBold; }
+  .strike-anchor.color-white:before, .strike-anchor.color-white:after {
+    background: #fff; }
+  .strike-anchor.color-black:before, .strike-anchor.color-black:after {
+    background: #000; }
+  .strike-anchor:before, .strike-anchor:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    -webkit-transition: all ease 300ms;
+    transition: all ease 300ms; }
+  .strike-anchor:before {
+    left: -1.5px;
+    width: 105%;
+    -webkit-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) all ease 300ms;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) all ease 300ms; }
+  .strike-anchor:after {
+    right: 2.5px;
+    -webkit-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
+  .strike-anchor:hover {
+    text-decoration: none;
+    color: #cccccc; }
+  .strike-anchor:hover:before {
+    width: 0;
+    -webkit-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
+  .strike-anchor:hover:after {
+    background: transparent;
+    width: 100%;
+    -webkit-transition: all ease 300ms;
+    transition: all ease 300ms; }
+
+#particles-js {
+  background: #000;
+  min-height: 100vh; }
+
+.section-one {
+  overflow: hidden; }
+  .section-one .section-one-content {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    color: #fff; }
+    .section-one .section-one-content .one-content-inside {
+      width: 700px;
+      text-align: justify; }
+      .section-one .section-one-content .one-content-inside h4 {
+        font-size: 34px;
+        font-family: 'Geometria-ExtraBold'; }
+      .section-one .section-one-content .one-content-inside p {
+        font-family: 'Nunito-SemiBold'; }
+  .section-one .img-back {
+    position: absolute;
+    top: 0;
+    min-height: 100vh;
+    z-index: 1; }
+    .section-one .img-back img {
+      height: 100%; }
+
+.section-two {
+  background: url("../img/home/bg_client.png") no-repeat;
+  background-size: cover; }
+  .section-two .section-two-content p {
+    font-family: 'Nunito-SemiBold'; }
+
+.section-three {
+  background: url("../img/home/bg_team.png") no-repeat;
+  background-size: cover; }
+  .section-three .section-three-content p {
+    font-family: 'Nunito-SemiBold'; }
+
+.section-four {
+  background: url("../img/home/bg_products.png") no-repeat;
+  background-size: cover; }
+  .section-four .section-four-content p {
+    font-family: 'Nunito-SemiBold'; }
 
 .address {
   -webkit-box-flex: 0.3;

@@ -1,4 +1,4 @@
-<header hide-on-scroll>
+<header ng-controller="headerCtrl">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -12,9 +12,19 @@
                     <img src="img/logo.png" alt="logo" height="25">
                 </a>
             </div>
-            <div class="menu-bredcrum pull-right">
-                Menu
+            <div class="hamburger pointer pull-right" ng-click="getnav();">
+                <div class="color-white menu-title">Menu</div>
+                <div class="menu-line">
+                    <span class="icon-bar box-shadow {{onebar}}"></span>
+                    <span class="icon-bar box-shadow {{secondbar}}"></span>
+                    <span class="icon-bar box-shadow third-line {{thirdbar}}"></span>
+                </div>
             </div>
         </div>
     </nav>
+    <div class="sidemenu {{getslide}}">
+        <div class="collapse navbar-collapse" id="nav-collapse">
+            <div ng-include="template.menu" class="template menu"></div>
+        </div>
+    </div>
 </header>
