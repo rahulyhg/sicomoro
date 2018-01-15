@@ -1,3 +1,37 @@
  @media (max-width: $screen-xs-max) {
      // Mobile
+     //scss for common for pages
+    .d-flex{
+            flex-wrap: wrap;
+    }
+      .flex-reverse {
+         flex-direction: column-reverse;
+     }
+    .width-80{
+        flex:auto;
+    }
+     .width-20{
+        flex:auto;
+    }
+    .title-main h3{
+        font-size: 45px;
+    }
+    .section-padding {
+    padding: 25px 15px;
+}
+//end of scss for common for pages
+
+//scss for product page
+.product-bg h3 {
+    font-size: 25px;
+}
+.product-bg{
+    img{
+        margin: 0 auto
+    }
+}
+.img-left-padding,.img-right-padding{
+    padding: 0
+}
+//end of scss for product page
  }

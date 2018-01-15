@@ -13,7 +13,16 @@
     font-size: 32px;
      font-family: 'Geometria-Medium';
 }
-
+.associate-padding{
+    padding: 50px 0;
+}
+.associate-name{
+ font-family: 'Geometria-Medium';
+ h3{
+         margin-top: 15px;
+    margin-bottom: 0px;
+ }
+}
 .team-member-name {
     h3 {
     font-size: 38px;
@@ -25,4 +34,7 @@
     p{
         margin: 0 0 20px;
     }
+}
+.team-bg{
+      background: url('../img/team/team_bg.png') no-repeat;
 }
