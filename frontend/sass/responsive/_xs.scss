@@ -4,9 +4,6 @@
     .d-flex{
             flex-wrap: wrap;
     }
-      .flex-reverse {
-         flex-direction: column-reverse;
-     }
     .width-80{
         flex:auto;
     }
@@ -34,4 +31,15 @@
     padding: 0
 }
 //end of scss for product page
+
+//scss for mission page
+.mission-bg{
+    .img{
+        margin: 0 auto;
+    }
+   .flex-reverse {
+         flex-direction: column-reverse;
+     }
+}
+//end of scss for mission page
  }

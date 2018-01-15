@@ -4,9 +4,7 @@
      .section-padding {
          padding: 25px 50px;
      }
-     .flex-reverse {
-         flex-direction: column-reverse;
-     }
+   
      //end of scss for common for pages
      //scss for mission page
      .mission-top-text {
@@ -23,6 +21,9 @@
          }
      }
      .team-main {
+           .flex-reverse {
+         flex-direction: column-reverse;
+     }
          .d-flex {
              flex-wrap: wrap;
          }
