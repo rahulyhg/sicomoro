@@ -40,8 +40,8 @@
       "random": true,
       "anim": {
         "enable": true,
-        "speed": 7,
-        "size_min": 30,
+        "speed": 8,
+        "size_min": 20,
         "sync": true
       }
     },
@@ -88,18 +88,18 @@
         }
       },
       "bubble": {
-        "distance": 133.99274002972194,
-        "size": 15,
+        "distance": 130,
+        "size": 8,
         "duration": 0.5,
         "opacity": 1,
         "speed": 3
       },
       "repulse": {
-        "distance": 617.1786813490223,
+        "distance": 615,
         "duration": 0.4
       },
       "push": {
-        "particles_nb": 2
+        "particles_nb": 4
       },
       "remove": {
         "particles_nb": 2
