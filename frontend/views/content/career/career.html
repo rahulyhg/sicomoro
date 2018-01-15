@@ -7,7 +7,8 @@
         <form name="formData" class="form-group">
               <div class="personal-info text-center text-uppercase">
                 <h2>Lorem Ipsum is simply dummy text </h2>
-            </div>
+             </div>
+             <div class="category-list">
             <div class="form-group">
                 <label for="Grade"></label>
                 <select class="form-control ng-pristine ng-valid ng-empty ng-touched" id="sel1" ng-model="studentForm.formData.applyGrade">
@@ -22,6 +23,7 @@
                                 
                </select>
             </div>
+             </div>
             <div class="personal-info text-center text-uppercase">
                 <h2>personal details</h2>
             </div>
@@ -94,7 +96,7 @@
                     <div class="form-group">
                         <div class="upload">
                             <div class="upload-main">
-                            <input type="text" placeholder="Upload Your Resume/CV" class="form-control "><button class="upload-btn">upload</button>
+                            <input type="text" placeholder="Upload Your Resume/CV" class="form-control "><button class="upload-btn career-btn">Upload</button>
                             </div>
                             <upload-image ng-model="form.resume" no-view="true" class="upload-resume ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty"
                                 style="">
@@ -115,7 +117,7 @@
                <div class="row">
                 <div class="col-md-8 col-sm-8 col-xs-12">
                     <div class="form-group">
-                        <input type="number" name="position" ng-model="data.position" class="form-control" id="position" placeholder="what type of position are you seeking?"
+                        <input type="text" name="position" ng-model="data.position" class="form-control" id="position" placeholder="what type of position are you seeking?"
                             required>
                         <div class="pull-right" ng-repeat="(field,value) in formData.position.$error" ng-show="formData.position.$touched">
                             <span class="label label-danger" ng-if="field=='required' && value">Please Enter position</span>
@@ -128,10 +130,10 @@
                     </div>
                 </div>
             </div>
-            <div class="career-btn text-center">
+            <div class="career-btn-main text-center">
                 <div class="form-group">
-                    <button ng-click="submitForm()" class="btn btn-default" ng-disabled="formData.$invalid" promise-btn>Reset</button>
-                    <button ng-click="submitForm()" class="btn btn-default" ng-disabled="formData.$invalid" promise-btn>Submit</button>
+                    <button ng-click="submitForm()" class="reset-btn">Reset</button>
+                    <button ng-click="submitForm()" class="career-btn">Submit</button>
                 </div>
             </div>
         </form>

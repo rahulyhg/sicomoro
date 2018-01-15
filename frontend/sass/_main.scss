@@ -8,12 +8,17 @@ $brand-info: #000072 !default;
 $color-white:#fff;
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
-/* Bootstrap Variables Goes Here */
 
+
+/* Bootstrap Variables Goes Here */
 @import "other/font-fix";
 @font-face {
     font-family: 'Geometria-ExtraBold';
     src: url("../fonts/Geometria-ExtraBold.otf");
+}
+@font-face {
+    font-family: 'Geometria';
+    src: url("../fonts/Geometria.otf");
 }
 
 @font-face {
