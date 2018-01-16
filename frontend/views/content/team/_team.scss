@@ -5,19 +5,37 @@
 .team-main {
     p {
         font-weight: 600;
+           font-family: 'Nunito';
     }
 }
 
 .text-associate h3 {
     font-size: 32px;
-    font-family: 'Geometria-ExtraBold';
-    font-weight: 600
+     font-family: 'Geometria-Medium';
+     margin-bottom: 20px;
 }
-
+.associate-padding{
+    padding: 50px 0;
+}
+.associate-name{
+ font-family: 'Geometria-Medium';
+ h3{
+         margin-top: 15px;
+    margin-bottom: 0px;
+ }
+}
 .team-member-name {
     h3 {
-        font-size: 40px;
-        text-transform: uppercase;
-        font-family: 'Geometria-ExtraBold';
+    font-size: 38px;
+    text-transform: uppercase;
+    font-family: 'Geometria-ExtraBold';
+    margin: 0;
+    color: black;
     }
+    p{
+        margin: 0 0 20px;
+    }
+}
+.team-bg{
+      background: url('../img/team/team_bg.png') no-repeat;
 }

@@ -1,0 +1,28 @@
+.about {
+    .section-one {
+        margin-bottom: -200px;
+    }
+    .img-holder {
+        width: 360px;
+    }
+    .roots,
+    .title-three-about {
+        font-size: 40px;
+        font-family: Geometria-ExtraBold;
+        line-height: 1.2;
+    }
+    .roots {
+        color: #aeaaa7;
+        width: 60%;
+    }
+    .title-three-about {
+        color: $color-brown;
+    }
+    .about-holder {
+        padding: 50px 0;
+        h4 {
+            font-size: 22px;
+            font-family: Nunito-SemiBold;
+        }
+    }
+}

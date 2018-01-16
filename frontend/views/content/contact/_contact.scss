@@ -3,9 +3,27 @@
 }
 
 .address-line {
-    padding: 30px 80px
+    padding: 30px 60px;
+    p{
+        font-size: 14px;
+          font-family: 'Nunito'; 
+    }
+    h2{
+           font-family: 'Geometria-Bold';
+           font-size: 35px;
+           color: #000000;
+    }
+    h3{
+           font-family: 'Geometria-Medium';
+    }
+    span{
+        font-weight: bold;
+    }
 }
-
+.address-img{
+    padding: 10px 0;
+    
+}
 .map-contact {
     flex: 0.7;
 }

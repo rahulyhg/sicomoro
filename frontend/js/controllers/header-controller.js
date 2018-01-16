@@ -18,4 +18,11 @@ myApp.controller('headerCtrl', function ($scope, TemplateService) {
             $scope.thirdbar = "thirdbar";
         }
     };
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 100) {
+            $(".navbar-color-change").css("background", 'rgba(0, 0, 0, 0.34)');
+        } else {
+            $(".navbar-color-change").css("background", 'transparent');
+        }
+    });
 });

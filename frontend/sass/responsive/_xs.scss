@@ -1,3 +1,176 @@
  @media (max-width: $screen-xs-max) {
      // Mobile
+     //scss for common for pages
+     p {
+         font-size: 14px;
+     }
+     .d-flex {
+         flex-wrap: wrap;
+     }
+     .width-80 {
+         flex: auto;
+     }
+     .width-20 {
+         flex: auto;
+     }
+     .title-main h3 {
+         font-size: 45px;
+     }
+     .section-padding {
+         padding: 25px 15px;
+     }
+     .title-main h3 {
+         font-size: 38px;
+     }
+     .hamburger .menu-title{
+         font-size: 20px;
+     }
+     .sidemenu ul li a{
+        font-size: 15px; 
+     }
+     //end of scss for common for pages
+     //scss for product page
+     .product-bg h3 {
+         font-size: 22px;
+     }
+     .product-bg {
+         .flex-reverse {
+             flex-direction: column-reverse;
+         }
+         .product-img {
+             margin: 0 auto;
+         }
+     }
+     .cust-text {
+         text-align: center !important;
+     }
+     .img-left-padding,
+     .img-right-padding {
+         padding: 0 100px;
+     }
+     .product-modal-bg p{
+         padding: 10px 10px 20px 10px;
+     }
+     //end of scss for product page
+     //scss for mission page
+     .mission-bg {
+         .flex-reverse {
+             flex-direction: column-reverse;
+         }
+         .text-align-last {
+             text-align-last: center;
+         }
+     }
+     .mission-img {
+         margin: 0 auto;
+     }
+     .mission-bg h3 {
+         font-size: 20px;
+         text-align: center;
+     }
+     .mission-top-text {
+         padding: 20px 20px 20px 20px;
+     }
+     //end of scss for mission page
+     //scss for team page
+     .associate-name h3,
+     .text-associate h3,
+     .team-member-name h3 {
+         font-size: 20px;
+     }
+   .text-associate h3{
+       margin: 0px;
+   }
+     //end of scss for team page
+     //scss for career page
+     .career-heading p {
+         font-size: 20px;
+     }
+     .personal-info p {
+         font-size: 18px;
+     }
+     .reset-btn,
+     .career-form .form-control {
+         font-size: 14px;
+     }
+     .career-btn {
+         padding: 16px 30px;
+         font-size: 14px;
+     }
+     //end of scss for career page
+     //scss for contact page
+     .address {
+         flex: auto;
+     }
+     .map-contact {
+         flex: auto;
+     }
+     .address-line {
+         padding: 30px 40px;
+     }
+     .address-line h2 {
+         font-size: 30px;
+     }
+     //end of scss for contact page
+    //scss for about us page
+    .about .section-one .section-padding{
+padding: 25px 0px;
+    }
+    .about .section-one {
+    margin-bottom: -98px;
+}
+      .about .img-holder {
+    width: 150px;
+    float: right;
+}
+.about .roots, .about .title-three-about{
+    font-size: 20px;
+}
+.about .about-holder {
+    padding: 15px 0;
+}
+.about .about-holder h4 {
+    font-size: 15px;}
+        //end of scss for about us page
+
+
+        //scss for home page 
+    .home .section-one .section-one-content .one-content-inside h4{
+    font-size: 20px;
+}
+.home .left-title{
+    font-size: 14px;
+}
+.custom-tabs ul.nav-tabs li a {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.custom-tabs .custom-tabs-content .title-tab h4{
+    font-size: 20px;
+}
+.img-holder img{
+width:150px;
+margin: 0 auto;
+}
+.custom-tabs .custom-tabs-content .title-tab {
+    position: initial;
+    right: 0;
+    top: 0;
+   h4{
+text-align: center;
+   } 
+}
+.home .section-three .img-team .team-name{
+    font-size: 14px;
+}
+.custom-tabs .custom-tabs-content .pad-cont{
+    padding: 20px 10px 0px 10px;
+}
+.custom-tabs .custom-tabs-content{
+    padding-bottom: 0px;
+    p{
+       margin-bottom: 0px;
+    }
+}
+//end of scss for home page 
  }
