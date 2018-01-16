@@ -22,6 +22,12 @@
      .title-main h3 {
          font-size: 38px;
      }
+     .hamburger .menu-title{
+         font-size: 20px;
+     }
+     .sidemenu ul li a{
+        font-size: 15px; 
+     }
      //end of scss for common for pages
      //scss for product page
      .product-bg h3 {
@@ -40,7 +46,7 @@
      }
      .img-left-padding,
      .img-right-padding {
-         padding: 0
+         padding: 0 100px;
      }
      .product-modal-bg p{
          padding: 10px 10px 20px 10px;
@@ -72,6 +78,9 @@
      .team-member-name h3 {
          font-size: 20px;
      }
+   .text-associate h3{
+       margin: 0px;
+   }
      //end of scss for team page
      //scss for career page
      .career-heading p {
@@ -105,10 +114,14 @@
      //end of scss for contact page
     //scss for about us page
     .about .section-one .section-padding{
-padding: 25px 15px;
+padding: 25px 0px;
     }
+    .about .section-one {
+    margin-bottom: -98px;
+}
       .about .img-holder {
-    
+    width: 150px;
+    float: right;
 }
 .about .roots, .about .title-three-about{
     font-size: 20px;
@@ -119,4 +132,36 @@ padding: 25px 15px;
 .about .about-holder h4 {
     font-size: 15px;}
         //end of scss for about us page
+
+
+        //scss for home page 
+    .home .section-one .section-one-content .one-content-inside h4{
+    font-size: 20px;
+}
+.home .left-title{
+    font-size: 14px;
+}
+.custom-tabs ul.nav-tabs li a {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.custom-tabs .custom-tabs-content .title-tab h4{
+    font-size: 20px;
+}
+.img-holder img{
+width:150px;
+margin: 0 auto;
+}
+.custom-tabs .custom-tabs-content .title-tab {
+    position: initial;
+    right: 0;
+    top: 0;
+   h4{
+text-align: center;
+   } 
+}
+.home .section-three .img-team .team-name{
+    font-size: 14px;
+}
+//end of scss for home page 
  }

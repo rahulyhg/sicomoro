@@ -10319,7 +10319,7 @@ a.color-black {
   position: relative;
   cursor: pointer;
   font-size: 16px;
-  font-family: Geometria-ExtraBold; }
+  font-family: 'Nunito'; }
   .strike-anchor.color-white:before, .strike-anchor.color-white:after {
     background: #fff; }
   .strike-anchor.color-black:before, .strike-anchor.color-black:after {
@@ -10406,8 +10406,6 @@ a.color-black {
       .home .section-one .section-one-content .one-content-inside h4 {
         font-size: 34px;
         font-family: 'Geometria-ExtraBold'; }
-      .home .section-one .section-one-content .one-content-inside p {
-        font-family: 'Nunito-SemiBold'; }
   .home .section-one .img-back {
     position: absolute;
     top: 0;
@@ -10420,22 +10418,18 @@ a.color-black {
   background: url("../img/home/bg_client.png") no-repeat;
   background-size: cover;
   margin: 10px 5px; }
-  .home .section-two .section-two-content p {
-    font-family: 'Nunito-SemiBold'; }
 
 .home .section-three {
   background: url("../img/home/bg_team.png") no-repeat;
   background-size: cover; }
   .home .section-three .left-title {
     left: 45px; }
-  .home .section-three .section-three-content p {
-    font-family: 'Nunito-SemiBold'; }
   .home .section-three .img-team img {
     margin: 0 auto; }
   .home .section-three .img-team .team-name {
     padding: 10px 0;
     text-align: center;
-    font-family: 'Nunito-SemiBold'; }
+    font-family: 'Geometria'; }
 
 .home .section-four {
   background: url("../img/home/bg_products.png") no-repeat;
@@ -10651,7 +10645,8 @@ a.color-black {
 
 .text-associate h3 {
   font-size: 32px;
-  font-family: 'Geometria-Medium'; }
+  font-family: 'Geometria-Medium';
+  margin-bottom: 20px; }
 
 .associate-padding {
   padding: 50px 0; }
@@ -10715,9 +10710,17 @@ a.color-black {
 .fancybox-nav.fancybox-prev span {
   background-image: url(../img/prev.png); }
 
+@media (max-width: 1199px) {
+  .section-padding {
+    padding: 25px 64px; }
+  .home .section-three .left-title {
+    left: 52px; }
+  .custom-tabs .custom-tabs-content .title-tab h4 {
+    font-size: 40px; } }
+
 @media (max-width: 991px) {
   .section-padding {
-    padding: 25px 50px; }
+    padding: 25px 30px; }
   p {
     font-size: 15px; }
   .title-main h3 {
@@ -10763,12 +10766,30 @@ a.color-black {
     padding: 0px 0 50px 0; }
   .team-member-name {
     text-align: center; }
+  .associate-img {
+    padding: 25px 0; }
   .product-bg h3 {
     font-size: 30px; }
   .about .img-holder {
     width: 310px; }
-  .about .roots, .about .title-three-about {
-    font-size: 30px; } }
+  .about .roots,
+  .about .title-three-about {
+    font-size: 30px; }
+  .custom-tabs ul.nav-tabs li a {
+    font-size: 18px;
+    padding: 10px 5px; }
+  .custom-tabs .custom-tabs-content .title-tab h4 {
+    font-size: 32px; }
+  .home .left-title {
+    left: -35px; }
+  .home .section-three .left-title {
+    left: -10px; }
+  .home .section-four .left-title {
+    left: -50px; }
+  .min-full-height {
+    min-height: 50vh; }
+  #particles-js {
+    min-height: 65vh; } }
 
 @media (max-width: 767px) {
   p {
@@ -10790,6 +10811,10 @@ a.color-black {
     padding: 25px 15px; }
   .title-main h3 {
     font-size: 38px; }
+  .hamburger .menu-title {
+    font-size: 20px; }
+  .sidemenu ul li a {
+    font-size: 15px; }
   .product-bg h3 {
     font-size: 22px; }
   .product-bg .flex-reverse {
@@ -10803,7 +10828,7 @@ a.color-black {
     text-align: center !important; }
   .img-left-padding,
   .img-right-padding {
-    padding: 0; }
+    padding: 0 100px; }
   .product-modal-bg p {
     padding: 10px 10px 20px 10px; }
   .mission-bg .flex-reverse {
@@ -10824,6 +10849,8 @@ a.color-black {
   .text-associate h3,
   .team-member-name h3 {
     font-size: 20px; }
+  .text-associate h3 {
+    margin: 0px; }
   .career-heading p {
     font-size: 20px; }
   .personal-info p {
@@ -10847,10 +10874,35 @@ a.color-black {
   .address-line h2 {
     font-size: 30px; }
   .about .section-one .section-padding {
-    padding: 25px 15px; }
+    padding: 25px 0px; }
+  .about .section-one {
+    margin-bottom: -98px; }
+  .about .img-holder {
+    width: 150px;
+    float: right; }
   .about .roots, .about .title-three-about {
     font-size: 20px; }
   .about .about-holder {
     padding: 15px 0; }
   .about .about-holder h4 {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .home .section-one .section-one-content .one-content-inside h4 {
+    font-size: 20px; }
+  .home .left-title {
+    font-size: 14px; }
+  .custom-tabs ul.nav-tabs li a {
+    font-size: 14px;
+    padding: 5px 10px; }
+  .custom-tabs .custom-tabs-content .title-tab h4 {
+    font-size: 20px; }
+  .img-holder img {
+    width: 150px;
+    margin: 0 auto; }
+  .custom-tabs .custom-tabs-content .title-tab {
+    position: initial;
+    right: 0;
+    top: 0; }
+    .custom-tabs .custom-tabs-content .title-tab h4 {
+      text-align: center; }
+  .home .section-three .img-team .team-name {
+    font-size: 14px; } }

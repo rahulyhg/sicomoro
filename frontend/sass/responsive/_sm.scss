@@ -65,6 +65,9 @@
      .team-member-name {
          text-align: center
      }
+     .associate-img {
+    padding: 25px 0;
+}
      //end of scss for team page
      //scss for product page
      .product-bg h3 {
@@ -95,17 +98,24 @@
      //home
      .home {
          .left-title {
-             left: 10px;
+             left: -35px;
          }
          .section-three {
              .left-title {
-                 left: 40px;
+                 left: -10px;
              }
          }
          .section-four {
              .left-title {
-                 left: -5px;
+                 left: -50px;
              }
          }
      }
+     .min-full-height {
+    min-height: 50vh;
+}
+#particles-js{
+     min-height: 65vh;
+}
+
  }
