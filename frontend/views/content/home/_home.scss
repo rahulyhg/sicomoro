@@ -19,9 +19,6 @@
                     font-size: 34px;
                     font-family: 'Geometria-ExtraBold';
                 }
-                p {
-                    font-family: 'Nunito-SemiBold';
-                }
             }
         }
         .img-back {
@@ -38,22 +35,12 @@
         background: url('../img/home/bg_client.png') no-repeat;
         background-size: cover;
         margin: 10px 5px;
-        .section-two-content {
-            p {
-                font-family: 'Nunito-SemiBold';
-            }
-        }
     }
     .section-three {
         background: url('../img/home/bg_team.png') no-repeat;
         background-size: cover;
         .left-title {
             left: 45px;
-        }
-        .section-three-content {
-            p {
-                font-family: 'Nunito-SemiBold';
-            }
         }
         .img-team {
             img {
@@ -62,7 +49,7 @@
             .team-name {
                 padding: 10px 0;
                 text-align: center;
-                font-family: 'Nunito-SemiBold';
+                font-family: 'Geometria';
             }
         }
     }
