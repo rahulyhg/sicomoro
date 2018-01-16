@@ -1,45 +1,103 @@
  @media (max-width: $screen-xs-max) {
      // Mobile
      //scss for common for pages
-    .d-flex{
-            flex-wrap: wrap;
-    }
-    .width-80{
-        flex:auto;
-    }
-     .width-20{
-        flex:auto;
-    }
-    .title-main h3{
-        font-size: 45px;
-    }
-    .section-padding {
-    padding: 25px 15px;
-}
-//end of scss for common for pages
-
-//scss for product page
-.product-bg h3 {
-    font-size: 25px;
-}
-.product-bg{
-    img{
-        margin: 0 auto
-    }
-}
-.img-left-padding,.img-right-padding{
-    padding: 0
-}
-//end of scss for product page
-
-//scss for mission page
-.mission-bg{
-    .img{
-        margin: 0 auto;
-    }
-   .flex-reverse {
-         flex-direction: column-reverse;
+     p {
+         font-size: 14px;
      }
-}
-//end of scss for mission page
+     .d-flex {
+         flex-wrap: wrap;
+     }
+     .width-80 {
+         flex: auto;
+     }
+     .width-20 {
+         flex: auto;
+     }
+     .title-main h3 {
+         font-size: 45px;
+     }
+     .section-padding {
+         padding: 25px 15px;
+     }
+     .title-main h3 {
+         font-size: 38px;
+     }
+     //end of scss for common for pages
+     //scss for product page
+     .product-bg h3 {
+         font-size: 22px;
+     }
+     .product-bg {
+         .flex-reverse {
+             flex-direction: column-reverse;
+         }
+         .product-img {
+             margin: 0 auto;
+         }
+     }
+     .cust-text {
+         text-align: center !important;
+     }
+     .img-left-padding,
+     .img-right-padding {
+         padding: 0
+     }
+     //end of scss for product page
+     //scss for mission page
+     .mission-bg {
+         .flex-reverse {
+             flex-direction: column-reverse;
+         }
+         .text-align-last {
+             text-align-last: center;
+         }
+     }
+     .mission-img {
+         margin: 0 auto;
+     }
+     .mission-bg h3 {
+         font-size: 20px;
+         text-align: center;
+     }
+     .mission-top-text {
+         padding: 20px 20px 20px 20px;
+     }
+     //end of scss for mission page
+     //scss for team page
+     .associate-name h3,
+     .text-associate h3,
+     .team-member-name h3 {
+         font-size: 20px;
+     }
+     //end of scss for team page
+     //scss for career page
+     .career-heading p {
+         font-size: 20px;
+     }
+     .personal-info p {
+         font-size: 18px;
+     }
+     .reset-btn,
+     .career-form .form-control {
+         font-size: 14px;
+     }
+     .career-btn {
+         padding: 16px 30px;
+         font-size: 14px;
+     }
+     //end of scss for career page
+     //scss for contact page
+     .address {
+         flex: auto;
+     }
+     .map-contact {
+         flex: auto;
+     }
+     .address-line {
+         padding: 30px 40px;
+     }
+     .address-line h2 {
+         font-size: 30px;
+     }
+     //end of scss for contact page
  }

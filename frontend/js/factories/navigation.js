@@ -5,7 +5,7 @@ myApp.factory('NavigationService', function () {
         anchor: "home",
         subnav: []
     }, {
-        name: "Team",
+        name: "The Team",
         classis: "active",
         anchor: "team",
         subnav: []
@@ -20,7 +20,7 @@ myApp.factory('NavigationService', function () {
         anchor: "about",
         subnav: []
     }, {
-        name: "Career",
+        name: "Careers",
         classis: "active",
         anchor: "career",
         subnav: []
@@ -30,7 +30,7 @@ myApp.factory('NavigationService', function () {
         anchor: "contact",
         subnav: []
     }, {
-        name: "product",
+        name: "Products and Offerings",
         classis: "active",
         anchor: "product",
         subnav: []

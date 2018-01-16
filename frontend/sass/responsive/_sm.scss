@@ -4,14 +4,24 @@
      .section-padding {
          padding: 25px 50px;
      }
-   
+   p{
+       font-size: 15px;
+   }
+   .title-main h3 {
+    font-size: 60px;}
      //end of scss for common for pages
      //scss for mission page
      .mission-top-text {
          padding: 20px 50px 20px 50px;
      }
+     .mission-bg h3{
+         font-size: 30px;
+     }
      //end of scss for mission page
      //scss for team page
+     .team-member-name h3{
+         font-size: 30px;
+     }
      .associate-img {
          .pull-right {
              float: none !important
@@ -22,7 +32,7 @@
      }
      .team-main {
            .flex-reverse {
-         flex-direction: column-reverse;
+           flex-direction: column-reverse;
      }
          .d-flex {
              flex-wrap: wrap;
