@@ -103,4 +103,18 @@
          font-size: 30px;
      }
      //end of scss for contact page
+    //scss for about us page
+      .about .img-holder {
+      width: 250px;
+    margin-left: 130px;
+}
+.about .roots, .about .title-three-about{
+    font-size: 20px;
+}
+.about .about-holder {
+    padding: 15px 0;
+}
+.about .about-holder h4 {
+    font-size: 15px;}
+        //end of scss for about us page
  }
