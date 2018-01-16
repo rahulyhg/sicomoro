@@ -6,6 +6,7 @@
   "keywords": [],
   "dependencies": {
     "@google-cloud/storage": "^1.4.0",
+    "@sendgrid/mail": "^6.2.0",
     "async": "^2.5.0",
     "autoprefixer": "^7.1.4",
     "chalk": "^2.1.0",

@@ -63,7 +63,7 @@ module.exports.globals = {
 };
 
 global.mongoose = require('mongoose');
-global.database = "database";
+global.database = "sicomora";
 global.storageBucket = "wohlig";
 mongoose.Promise = global.Promise;
 global.mongourl = "mongodb://localhost:27017/" + database;
@@ -82,6 +82,8 @@ global.validators = require('mongoose-validators');
 global.monguurl = require('monguurl');
 require('mongoose-middleware').initialize(mongoose);
 global.Schema = mongoose.Schema;
+// global["Grid"] = require('gridfs-stream');
+// global["gfs"] = Grid(mongoose.connections[0].db, mongoose);
 
 
 global.http = require('http');

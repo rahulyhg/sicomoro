@@ -1,141 +1,158 @@
 <heading-first>
 </heading-first>
 <div class="container">
-  <div class="career-description text-justify">
-      <p>-Our culture at Sicomoro promotes entrepreneurial and results-driven approach while teamwork and intellectual rigor are an integral part of one's performance. We strongly believe that people create success stories and understand our employees' uniqueness and are committed to building their careers. We encourage our team to display higher levels of initiative, hunger for learning, be self driven and taking on additional responsibility.</p>
-         <p>As an employer, we offer personal development and a positive working environment – the chance to realize your full potential, in a direction that suits your goals, in a business of exceptional size and scope. If you would like to come grow with Sicomoro, you may send your resume by filling the adjacent form.</p>
-  </div>
+    <div class="career-description text-justify">
+        <p>-Our culture at Sicomoro promotes entrepreneurial and results-driven approach while teamwork and intellectual rigor
+            are an integral part of one's performance. We strongly believe that people create success stories and understand
+            our employees' uniqueness and are committed to building their careers. We encourage our team to display higher
+            levels of initiative, hunger for learning, be self driven and taking on additional responsibility.</p>
+        <p>As an employer, we offer personal development and a positive working environment – the chance to realize your full
+            potential, in a direction that suits your goals, in a business of exceptional size and scope. If you would like
+            to come grow with Sicomoro, you may send your resume by filling the adjacent form.</p>
+    </div>
     <div class="career-form section-padding">
         <form name="formData" class="form-group">
-              <div class="career-heading text-center text-uppercase">
+            <div class="career-heading text-center text-uppercase">
                 <p>Lorem Ipsum is simply dummy text </p>
-             </div>
-             <div class="category-list">
-            <div class="form-group">
-                <label for="Grade"></label>
-                <select class="form-control ng-pristine ng-valid ng-empty ng-touched" id="sel1" ng-model="studentForm.formData.applyGrade">
-                               <option value="" disabled selected>Job Categories</option>
-                               <option value="Investment advisors">Investment advisors</option>
-                                <option value="Products and Ideation">Products and Ideation</option>
-                                <option value="Back office operations">Back office operations</option>
-                                <option value="Legal and Compliance">Legal and Compliance</option>
-                                <option value="Finance and Accounts">Finance and Accounts</option>
-                                <option value="IT">IT</option>
-                                 <option value="HR and Administartion">HR and Administartion</option>
-                                
-               </select>
             </div>
-             </div>
+            <div class="category-list">
+                <div class="form-group">
+                    <label for="Grade"></label>
+                    <select class="form-control ng-pristine ng-valid ng-empty ng-touched" id="sel1" ng-model="formData.career.jobCategory">
+                        <option value="" disabled selected>Job Categories</option>
+                        <option value="Investment advisors">Investment advisors</option>
+                        <option value="Products and Ideation">Products and Ideation</option>
+                        <option value="Back office operations">Back office operations</option>
+                        <option value="Legal and Compliance">Legal and Compliance</option>
+                        <option value="Finance and Accounts">Finance and Accounts</option>
+                        <option value="IT">IT</option>
+                        <option value="HR and Administartion">HR and Administartion</option>
+                    </select>
+                </div>
+            </div>
             <div class="personal-info text-center text-uppercase">
                 <p>personal details</p>
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="form-group">
-                        <input type="text" ng-model="data.name" class="form-control" id="name" placeholder="Full Name" required name="name">
-                        <div class="pull-right" ng-repeat="(field,value) in formData.name.$error" ng-show="formData.name.$touched">
-                            <span class="label label-danger" ng-if="field=='required' && value">Please Enter Name</span>
-                        </div>
+                        <input type="text" ng-model="formData.career.name" class="form-control" id="name" placeholder="Full Name" required name="name">
+                        <span class="errormsg" ng-show="formData.name.$touched && formData.name.$invalid">First Name is required.</span>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="form-group">
-                        <input type="email" ng-model="data.email" class="form-control" id="email" placeholder="Email Id" name="email" required>
-                        <div class="pull-right" ng-repeat="(field,value) in formData.email.$error" ng-show="formData.email.$touched">
-                            <span class="label label-danger" ng-if="field=='required' && value">Please Enter Email</span>
-                            <span class="label label-danger" ng-if="field=='email' && value">Please Enter Valid Email</span>
-                        </div>
+                        <input type="email" ng-model="formData.career.email" class="form-control" id="email" placeholder="Email Id" name="email"
+                            required>
+                        <span class="errormsg" ng-show="formData.email.$touched && formData.email.$invalid">First Name is required.</span>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="form-group">
-                        <input type="number" name="mobile" ng-model="data.mobile" class="form-control" id="mobile" placeholder="Mobile Number/Phone"
+                        <input type="number" name="mobile" ng-model="formData.career.mobile" class="form-control" id="mobile" placeholder="Mobile Number/Phone"
                             required>
-                        <div class="pull-right" ng-repeat="(field,value) in formData.mobile.$error" ng-show="formData.mobile.$touched">
-                            <span class="label label-danger" ng-if="field=='required' && value">Please Enter mobile</span>
-                        </div>
+
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
+                    <!--<div class="form-group">
+                        <input type="text" ng-model="formData.career.dob" class="form-control" id="dob" placeholder="Date Of Birth" name="dob">
+                    </div>-->
                     <div class="form-group">
-                        <input type="text" ng-model="data.date" class="form-control" id="date" placeholder="Date Of Birth" name="date">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="input-group">
+                                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="studentForm.formData.dob" is-open="popup1.opened"
+                                            datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                            name="dob" required/>
+                                        <span class="input-group-btn calender-border">
+            <button type="button" class="btn btn-default" ng-click="open1()"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+                                                    </span>
+                                    </p>
+                                    <span class="errormsg" ng-show="studentForm.dob.$touched && studentForm.dob.$invalid">DOB is required.</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="form-group">
-                        <textarea name="address" ng-model="data.address" id="address" cols="30" rows="10" class="form-control" placeholder="Address"
+                        <textarea name="address" ng-model="formData.career.address" id="address" cols="30" rows="10" class="form-control" placeholder="Address"
                             required></textarea>
-                        <div class="pull-right" ng-repeat="(field,value) in formData.address.$error" ng-show="formData.address.$touched">
-                            <span class="label label-danger" ng-if="field=='required' && value">Please Enter address</span>
-                        </div>
+
                     </div>
                 </div>
             </div>
-          
+
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="form-group">
-                        <input type="text" ng-model="data.postcode" class="form-control" id="postcode" placeholder="Post Code" name="post code">
+                        <input type="text" ng-model="formData.career.postCode" class="form-control" id="postCode" placeholder="Post Code" name="postCode">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="form-group">
-                        <input type="text" ng-model="data.state" class="form-control" id="state" placeholder="State" name="state">
+                        <input type="text" ng-model="formData.career.state" class="form-control" id="state" placeholder="State" name="state">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="form-group">
-                        <input type="text" ng-model="data.website" class="form-control" id="website" placeholder="Website" name="website">
+                        <input type="text" ng-model="formData.career.website" class="form-control" id="website" placeholder="Website" name="website">
                     </div>
                 </div>
             </div>
-              <div class="row">
+            <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="form-group">
                         <div class="upload">
                             <div class="upload-main">
-                            <input type="text" placeholder="Upload Your Resume/CV" class="form-control "><button class="upload-btn career-btn">Upload</button>
+                                <input type="text" placeholder="Upload Your Resume/CV" class="form-control "><button class="upload-btn career-btn">Upload</button>
                             </div>
-                            <upload-image ng-model="form.resume" no-view="true" class="upload-resume ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty"
-                                style="">
+                            <!--<upload-Image ng-model="formData.career.resume" no-view="true" class="upload-resume ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty">
                                 <div class="form-group" style="margin:0px;">
                                     <div class="">
                                         <input id="inputImage" type="file" accept="image/*,application/pdf" title="Choose File" image="image" class="btn-primary pointer ng-isolate-scope">
                                         <span>UPLOAD RESUME*</span>
                                     </div>
                                 </div>
-                            </upload-image>
+                            </upload-Image>-->
+                            <div>
+                                <upload-image ng-model="formData.career.resume"></upload-image>
+                            </div>
+                            <!--<div>
+                                <upload-image ng-model="test" callback="imageuploadcb()" no-view></upload-image>
+                            </div>-->
+
                         </div>
                     </div>
                 </div>
             </div>
-             <div class="personal-info text-center text-uppercase">
+            <div class="personal-info text-center text-uppercase">
                 <p>availability</p>
             </div>
-               <div class="row">
+            <div class="row">
                 <div class="col-md-8 col-sm-8 col-xs-12">
                     <div class="form-group">
-                        <input type="text" name="position" ng-model="data.position" class="form-control" id="position" placeholder="what type of position are you seeking?"
+                        <input type="text" name="position" ng-model="formData.career.position" class="form-control" id="position" placeholder="what type of position are you seeking?"
                             required>
-                        <div class="pull-right" ng-repeat="(field,value) in formData.position.$error" ng-show="formData.position.$touched">
-                            <span class="label label-danger" ng-if="field=='required' && value">Please Enter position</span>
-                        </div>
+
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="form-group">
-                        <input type="text" ng-model="data.Salary" class="form-control" id="Salary" placeholder="Previous Salary" name="Salary">
+                        <input type="text" ng-model="formData.career.Salary" class="form-control" id="Salary" placeholder="Previous Salary" name="salary">
                     </div>
                 </div>
             </div>
             <div class="career-btn-main text-center">
                 <div class="form-group">
                     <button ng-click="submitForm()" class="reset-btn">Reset</button>
-                    <button ng-click="submitForm()" class="career-btn">Submit</button>
+                    <button ng-click="submitForm(formData.career)" class="career-btn">Submit</button>
                 </div>
             </div>
         </form>

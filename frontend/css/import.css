@@ -10453,11 +10453,6 @@ a.color-black {
   opacity: 1;
   /* Firefox */ }
 
-.career-form ::-ms-input-placeholder {
-  color: black;
-  opacity: 1;
-  /* Firefox */ }
-
 .career-form ::placeholder {
   color: black;
   opacity: 1;
