@@ -10,7 +10,29 @@
         font-weight: bold;
     }
 }
+
 //scss for product modal
-.product-modal-bg{
-      background: url('../img/product/modalbg1.png') no-repeat;
+.product-modal-bg {
+    background: url("../img/modalbg1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    p {
+        font-size: 18px;
+        margin: 0;
+        padding: 30px 30px 50px 30px;
+        color: white;
+    }
+}
+
+.product-madal {
+    position: relative;
+    .close-modal {
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+        right: 11px;
+        cursor: pointer;
+    }
 }

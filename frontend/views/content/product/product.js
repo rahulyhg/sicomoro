@@ -8,7 +8,7 @@ myApp.controller('ProductCtrl', function ($scope, TemplateService, NavigationSer
                     animation: true,
                     templateUrl: 'frontend/views/modal/product-modal.html',
                     scope: $scope,
-                    size: 'md',
+                    size: 'lg',
                 });
                 if(data=="wealth"){
                     $scope.product="Individuals have varied financial aspirations that are often not well defined. At Sicomoro, we workwith clients in defining their financial goals and assist them to protect,grow and pass on / transfer their private wealth.We provide clients with effective wealth structures and best suited investmentsolutions."
