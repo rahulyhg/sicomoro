@@ -163,5 +163,14 @@ text-align: center;
 .home .section-three .img-team .team-name{
     font-size: 14px;
 }
+.custom-tabs .custom-tabs-content .pad-cont{
+    padding: 20px 10px 0px 10px;
+}
+.custom-tabs .custom-tabs-content{
+    padding-bottom: 0px;
+    p{
+       margin-bottom: 0px;
+    }
+}
 //end of scss for home page 
  }
