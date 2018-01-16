@@ -1,3 +1,14 @@
  @media (max-width: $screen-md-max) {
      // Desktop
+     .section-padding {
+         padding: 25px 64px;
+     }
+     //  home
+     .home .section-three .left-title {
+         left: 52px;
+     }
+     //custom tabs
+     .custom-tabs .custom-tabs-content .title-tab h4 {
+         font-size: 40px;
+     }
  }

@@ -2,24 +2,26 @@
      // Tablet
      //scss for common for pages
      .section-padding {
-         padding: 25px 50px;
+         padding: 25px 30px;
      }
-   p{
-       font-size: 15px;
-   }
-   .title-main h3 {
-    font-size: 60px;}
+     p {
+         font-size: 15px;
+     }
+     
+     .title-main h3 {
+         font-size: 60px;
+     }
      //end of scss for common for pages
      //scss for mission page
      .mission-top-text {
          padding: 20px 50px 20px 50px;
      }
-     .mission-bg h3{
+     .mission-bg h3 {
          font-size: 30px;
      }
      //end of scss for mission page
      //scss for team page
-     .team-member-name h3{
+     .team-member-name h3 {
          font-size: 30px;
      }
      .associate-img {
@@ -31,9 +33,9 @@
          }
      }
      .team-main {
-           .flex-reverse {
-           flex-direction: column-reverse;
-     }
+         .flex-reverse {
+             flex-direction: column-reverse;
+         }
          .d-flex {
              flex-wrap: wrap;
          }
@@ -65,17 +67,45 @@
      }
      //end of scss for team page
      //scss for product page
-     .product-bg h3{
+     .product-bg h3 {
          font-size: 30px;
      }
      //end of scss for product page
-      //scss for about us page
-      .about .img-holder {
-    width: 310px;
-}
-.about .roots, .about .title-three-about{
-    font-size: 30px;
-}
-        //end of scss for about us page
-     
+     //scss for about us page
+     .about .img-holder {
+         width: 310px;
+     }
+     .about .roots,
+     .about .title-three-about {
+         font-size: 30px;
+     }
+     //end of scss for about us page
+     //custom tabs
+     .custom-tabs {
+         ul.nav-tabs {
+             li a {
+                 font-size: 18px;
+                 padding: 10px 5px;
+             }
+         }
+         .custom-tabs-content .title-tab h4 {
+             font-size: 32px;
+         }
+     }
+     //home
+     .home {
+         .left-title {
+             left: 10px;
+         }
+         .section-three {
+             .left-title {
+                 left: 40px;
+             }
+         }
+         .section-four {
+             .left-title {
+                 left: -5px;
+             }
+         }
+     }
  }
