@@ -10846,9 +10846,8 @@ a.color-black {
     padding: 30px 40px; }
   .address-line h2 {
     font-size: 30px; }
-  .about .img-holder {
-    width: 250px;
-    margin-left: 130px; }
+  .about .section-one .section-padding {
+    padding: 25px 15px; }
   .about .roots, .about .title-three-about {
     font-size: 20px; }
   .about .about-holder {
