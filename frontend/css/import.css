@@ -10601,6 +10601,8 @@ select {
   border: none;
   color: grey;
   padding: 0 20px; }
+  .reset-btn:focus {
+    outline: none; }
 
 .career-btn-main {
   margin-top: 25px; }
@@ -10622,9 +10624,10 @@ select {
   border: none; }
   .calender-btn i {
     font-size: 25px; }
-  .calender-btn:hover {
+  .calender-btn:hover, .calender-btn:focus {
     background: transparent;
-    border: none; }
+    border: none;
+    outline: none; }
 
 .product-bg {
   background-color: #94856e;
@@ -10909,7 +10912,7 @@ select {
   .about .about-holder h4 {
     font-size: 15px; }
   .home .section-one .section-one-content .one-content-inside h4 {
-    font-size: 20px; }
+    font-size: 15px; }
   .home .left-title {
     font-size: 14px; }
   .custom-tabs ul.nav-tabs li a {
