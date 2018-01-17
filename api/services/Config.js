@@ -431,11 +431,6 @@ var models = {
                 });
             }
         });
-
-
-
-
-
     },
     //send career email
     careerFormEmail: function (data, callback) {
@@ -447,6 +442,7 @@ var models = {
             } else if (userdata && userdata.length > 0) {
                 // console.log("userdata ", userdata);
                 if (data.filename && data.filename != "") {
+
                     sails.hooks.views.render("career", data, function (err, body) {
                         // console.log("body : ", body);
                         if (err) {
@@ -457,9 +453,9 @@ var models = {
                             if (body && body.value != false) {
                                 var helper = require('sendgrid').mail;
 
-                                from_email = new helper.Email(data.from);
+                                var from_email = new helper.Email(data.from);
                                 to_email = new helper.Email(data.email);
-                                subject = data.subject;
+                                subject = "Sicomoro"
                                 content = new helper.Content("text/html", body);
                                 mail = new helper.Mail(from_email, subject, to_email, content);
                                 // var attachment = new helper.Attachment();
@@ -490,7 +486,7 @@ var models = {
                                         console.log(response.headers)
                                         callback(null, response);
                                     }
-                                });
+                                })
                             } else {
                                 callback({
                                     message: "Error while sending mail."

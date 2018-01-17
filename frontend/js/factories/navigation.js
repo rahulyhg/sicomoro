@@ -2,7 +2,7 @@
  var imgpath = imgurl + "readFile";
  var uploadurl = imgurl;
 
- myApp.factory('NavigationService', function () {
+ myApp.factory('NavigationService', function ($http) {
      var navigation = [{
          name: "Home",
          classis: "active",
