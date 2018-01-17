@@ -458,35 +458,49 @@ var models = {
                                 subject = "Sicomoro"
                                 content = new helper.Content("text/html", body);
                                 mail = new helper.Mail(from_email, subject, to_email, content);
-                                // var attachment = new helper.Attachment();
-                                // var file = fs.readFileSync(data.filename);
-                                // var base64File = new Buffer(file).toString('base64');
-                                // attachment.setContent(base64File);
-                                // var pdfgen = data.filename.split(".");
-                                // data.filename = pdfgen[0] + ".pdf";
-                                // attachment.setFilename(data.filename);
-                                // attachment.setDisposition('attachment');
-                                // mail.addAttachment(attachment);
-                                // console.log("sending mail", mail);
+                                var attachment = new helper.Attachment();
+                                // var file = fs.readFileSync( );
+                                var readstream = gfs.createReadStream({
+                                    filename: data.filename
+                                });
+                                var buf;
+                                var bufs = [];
+                                var base64File;
+                                readstream.on('data', function (d) {
+                                    bufs.push(d);
+                                });
+                                readstream.on('end', function () {
+                                    buf = Buffer.concat(bufs);
+                                    base64File = buf.toString('base64')
+                                    attachment.setContent(base64File);
+                                    var pdfgen = data.filename.split(".");
+                                    data.filename = pdfgen[0] + ".pdf";
+                                    attachment.setFilename(data.filename);
+                                    attachment.setDisposition('attachment');
+                                    mail.addAttachment(attachment);
+                                    // console.log("sending mail", mail);
 
-                                var sg = require('sendgrid')(userdata[0].name);
-                                var request = sg.emptyRequest({
-                                    method: 'POST',
-                                    path: '/v3/mail/send',
-                                    body: mail.toJSON()
+                                    var sg = require('sendgrid')(userdata[0].name);
+                                    var request = sg.emptyRequest({
+                                        method: 'POST',
+                                        path: '/v3/mail/send',
+                                        body: mail.toJSON()
+                                    });
+
+                                    sg.API(request, function (error, response) {
+                                        if (error) {
+                                            console.log('Error response received: ', error);
+                                            callback(error, null);
+                                        } else {
+                                            console.log("statuscode: ", response.statusCode)
+                                            console.log("body: ", response.body)
+                                            console.log(response.headers)
+                                            callback(null, response);
+                                        }
+                                    })
+                                    // console.log("@@@@@@@@@@@", buf)
                                 });
 
-                                sg.API(request, function (error, response) {
-                                    if (error) {
-                                        console.log('Error response received: ', error);
-                                        callback(error, null);
-                                    } else {
-                                        console.log("statuscode: ", response.statusCode)
-                                        console.log("body: ", response.body)
-                                        console.log(response.headers)
-                                        callback(null, response);
-                                    }
-                                })
                             } else {
                                 callback({
                                     message: "Error while sending mail."
