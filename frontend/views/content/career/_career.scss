@@ -88,6 +88,9 @@ select {
     border: none;
     color: grey;
     padding: 0 20px;
+    &:focus{
+        outline:none;
+    }
 }
 
 .career-btn-main {
@@ -115,8 +118,9 @@ border: none;
 i{
     font-size: 25px;
 }
-&:hover{
+&:hover,&:focus{
     background: transparent;
     border: none;
+    outline: none;
 }
 }
