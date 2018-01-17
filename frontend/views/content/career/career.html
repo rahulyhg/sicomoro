@@ -28,6 +28,7 @@
                         <option value="IT">IT</option>
                         <option value="HR and Administartion">HR and Administartion</option>
                     </select>
+                    <span ng-if="errMsg">{{errMsg}}</span>
                 </div>
             </div>
             <div class="personal-info text-center text-uppercase">
@@ -119,6 +120,7 @@
                             </div>
                             <upload-image class="upload-resume" ng-model="formData.career.resume"></upload-image>
                         </div>
+                        <span ng-if="errMsgResume" class="pull-right">{{errMsgResume}}</span>
                     </div>
                 </div>
             </div>
@@ -142,7 +144,7 @@
             </div>
             <div class="career-btn-main text-center">
                 <div class="form-group">
-                    <button ng-click="reset(formData.career)" class="reset-btn">Reset</button>
+                    <button type="reset" class="reset-btn">Reset</button>
                     <button ng-click="submitForm(formData.career)" class="career-btn" ng-disabled="formData.$invalid">Submit</button>
                 </div>
             </div>

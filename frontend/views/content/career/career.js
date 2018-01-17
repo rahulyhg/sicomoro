@@ -1,22 +1,54 @@
-myApp.controller('CareerCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+myApp.controller('CareerCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal) {
     $scope.template = TemplateService.getHTML("content/career/career.html");
     TemplateService.title = "Career"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
     $scope.title = "careers";
     $scope.test = {}
     $scope.test.img = "";
+    // $scope.formData = {};
     $scope.submitForm = function (form) {
-        console.log("This is it", form);
-        NavigationService.saveCareer(form, function (data) {
-            console.log("in save career", data.data);
-            if (data.data.value) {
-                NavigationService.sendCareerApplication(data.data.data, function (data) {
-                    console.log("send email ", data.data);
-                });
+        if (!form.jobCategory) {
+            $scope.errMsg = "Job Category Required"
+        }
+        if (!form.resume) {
+            $scope.errMsgResume = "please upload resume"
+        }
+        if (form.resume) {
+            var exet = form.resume.split(".");
+            if (exet[1] != "pdf") {
+                $scope.errMsgResume = "please upload pdf"
+            } else {
+                if (form.jobCategory) {
+                    NavigationService.saveCareer(form, function (data) {
+                        console.log("in save career", data.data);
+                        if (data.data.value) {
+                            NavigationService.sendCareerApplication(data.data.data, function (data) {
+                                console.log("send email ", data.data);
+                            });
+
+                            $scope.thankyou = $uibModal.open({
+                                animation: true,
+                                templateUrl: 'views/modal/thankyou.html',
+                                scope: $scope,
+                                size: 'sm',
+                            });
+                            $timeout(function () {
+                                $scope.thankyou.close();
+                                $state.reload();
+                            }, 1000);
+                        }
+                    });
+                }
             }
-        });
+        }
+
     };
-    $scope.reset = function (form) {
+    $scope.reset = function (formData) {
+        console.log("@@@@@@@@@@@@@@@@@@@@@@", $scope.formData);
+
+        $scope.formData.career.position = "";
+        // $scope.formData.position = "";
+        // $scope.formData.career = "";
 
     }
     // $scope.uploadimagecb = function (img, length) {
