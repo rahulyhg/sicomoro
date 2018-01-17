@@ -16,6 +16,9 @@ myApp.controller('CareerCtrl', function ($scope, TemplateService, NavigationServ
             }
         });
     };
+    $scope.reset = function (form) {
+
+    }
     // $scope.uploadimagecb = function (img, length) {
     //     console.log(img)
     // }

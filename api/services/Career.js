@@ -38,13 +38,13 @@ var model = {
             } else {
                 // console.log("User >>> welcomeEmail >>> User.findOneAndUpdate >>> error", created);
                 var emailData = {};
-                emailData.email = created.email;
+                emailData.email = "hr@sicomoro.in";
                 emailData.subject = "";
                 emailData.filename = "career.ejs";
-                emailData.from = "harsh@wohlig.com"
+                emailData.from = "hr@sicomoro.in"
                 emailData.firstname = created.name;
                 emailData.mobile = created.mobile;
-                emailData.dob = created.dob;
+                emailData.dob = moment(created.dob).format('LL');
                 emailData.address = created.address;
                 emailData.postCode = created.postCode;
                 emailData.state = created.state;
@@ -52,6 +52,7 @@ var model = {
                 emailData.position = created.position;
                 emailData.Salary = created.Salary;
                 emailData.jobCategory = created.jobCategory;
+                emailData.filename = created.resume
                 Config.careerFormEmail(emailData, function (err, response) {
                     if (err) {
                         console.log("error in email", err);
