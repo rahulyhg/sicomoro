@@ -2,7 +2,7 @@
 </heading-first>
 <div class="container">
     <div class="career-description text-justify">
-        <p>-Our culture at Sicomoro promotes entrepreneurial and results-driven approach while teamwork and intellectual rigor
+        <p>Our culture at Sicomoro promotes entrepreneurial and results-driven approach while teamwork and intellectual rigor
             are an integral part of one's performance. We strongly believe that people create success stories and understand
             our employees' uniqueness and are committed to building their careers. We encourage our team to display higher
             levels of initiative, hunger for learning, be self driven and taking on additional responsibility.</p>
@@ -62,8 +62,6 @@
                     </div>-->
                     <div class="form-group">
                         <div class="dateofbirth">
-                            <div class="row">
-                                <div class="col-md-12">
                                     <div class="input-group">
                                         <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="formData.career.dob" is-open="popup1.opened"
                                             datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
@@ -72,10 +70,9 @@
             <button type="button" class="btn btn-default calender-btn" ng-click="open1()"><i class="fa fa-calendar" aria-hidden="true"></i></button>
                                                     </span>
                                     </div>
-                                    <span class="errormsg" ng-show="formData.dob.$touched && formData.dob.$invalid">DOB is required.</span>
+                                   
                                 </div>
-                            </div>
-                        </div>
+                                  <span class="errormsg" ng-show="formData.dob.$touched && formData.dob.$invalid">DOB is required.</span>
                     </div>
                 </div>
             </div>
@@ -103,7 +100,7 @@
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="form-group">
-                        <input type="text" ng-model="formData.career.website" class="form-control" id="website" placeholder="Website" name="website">
+                        <input type="url" ng-model="formData.career.website" class="form-control" id="website" placeholder="Website" name="website">
                     </div>
                     <span class="errormsg" ng-show="formData.website.$touched && formData.website.$invalid">WebSite is required.</span>
                 </div>
