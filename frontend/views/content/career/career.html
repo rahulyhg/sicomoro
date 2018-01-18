@@ -13,7 +13,7 @@
     <div class="career-form section-padding">
         <form name="formData" class="form-group">
             <div class="career-heading text-center text-uppercase">
-                <p>Lorem Ipsum is simply dummy text </p>
+                <p>Get in touch and work with us at Sicomoro</p>
             </div>
             <div class="category-list">
                 <div class="form-group">
@@ -88,7 +88,7 @@
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="form-group">
-                        <input type="text" ng-model="formData.career.postCode" class="form-control" id="postCode" placeholder="Post Code" name="postCode">
+                        <input type="number" ng-model="formData.career.postCode" class="form-control" id="postCode" placeholder="Post Code" name="postCode">
                     </div>
                     <span class="errormsg" ng-show="formData.postCode.$touched && formData.postCode.$invalid">Post Code is required.</span>
                 </div>
@@ -134,7 +134,7 @@
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="form-group">
-                        <input type="text" ng-model="formData.career.Salary" class="form-control" id="Salary" placeholder="Previous Salary" name="salary">
+                        <input type="number" ng-model="formData.career.Salary" class="form-control" id="Salary" placeholder="Previous Salary" name="salary">
                     </div>
                     <span class="errormsg" ng-show="formData.Salary.$touched && formData.Salary.$invalid">Salary is required.</span>
                 </div>
