@@ -22,11 +22,14 @@
      .title-main h3 {
          font-size: 38px;
      }
-     .hamburger .menu-title{
+     .hamburger .menu-title {
          font-size: 20px;
      }
-     .sidemenu ul li a{
-        font-size: 15px; 
+     .sidemenu ul li a {
+         font-size: 15px;
+     }
+     footer {
+         font-size: 14px;
      }
      //end of scss for common for pages
      //scss for product page
@@ -49,7 +52,7 @@
      .img-right-padding {
          padding: 0 100px;
      }
-     .product-modal-bg p{
+     .product-modal-bg p {
          padding: 10px 10px 20px 10px;
      }
      //end of scss for product page
@@ -79,9 +82,9 @@
      .team-member-name h3 {
          font-size: 20px;
      }
-   .text-associate h3{
-       margin: 0px;
-   }
+     .text-associate h3 {
+         margin: 0px;
+     }
      //end of scss for team page
      //scss for career page
      .career-heading p {
@@ -113,65 +116,68 @@
          font-size: 30px;
      }
      //end of scss for contact page
-    //scss for about us page
-    .about .section-one .section-padding{
-padding: 25px 0px;
-    }
-    .about .section-one {
-    margin-bottom: -98px;
-}
-      .about .img-holder {
-    width: 150px;
-    float: right;
-}
-.about .roots, .about .title-three-about{
-    font-size: 20px;
-}
-.about .about-holder {
-    padding: 15px 0;
-}
-.about .about-holder h4 {
-    font-size: 15px;}
-        //end of scss for about us page
-
-
-        //scss for home page 
-    .home .section-one .section-one-content .one-content-inside h4{
-    font-size: 15px;
-}
-.home .left-title{
-    font-size: 14px;
-}
-.custom-tabs ul.nav-tabs li a {
-    font-size: 14px;
-    padding: 5px 10px;
-}
-.custom-tabs .custom-tabs-content .title-tab h4{
-    font-size: 20px;
-}
-.img-holder img{
-width:150px;
-margin: 0 auto;
-}
-.custom-tabs .custom-tabs-content .title-tab {
-    position: initial;
-    right: 0;
-    top: 0;
-   h4{
-text-align: center;
-   } 
-}
-.home .section-three .img-team .team-name{
-    font-size: 14px;
-}
-.custom-tabs .custom-tabs-content .pad-cont{
-    padding: 20px 10px 0px 10px;
-}
-.custom-tabs .custom-tabs-content{
-    padding-bottom: 0px;
-    p{
-       margin-bottom: 0px;
-    }
-}
-//end of scss for home page 
+     //scss for about us page
+     .about .section-one .section-padding {
+         padding: 25px 0px;
+     }
+     .about .section-one {
+         margin-bottom: -98px;
+     }
+     .about .img-holder {
+         width: 150px;
+         float: right;
+     }
+     .about .roots,
+     .about .title-three-about {
+         font-size: 20px;
+     }
+     .about .about-holder {
+         padding: 15px 0;
+     }
+     .about .about-holder h4 {
+         font-size: 15px;
+     }
+     //end of scss for about us page
+     //scss for home page 
+     .home .section-one .section-one-content .one-content-inside {
+         width: 300px;
+     }
+     .home .section-one .section-one-content .one-content-inside h4 {
+         font-size: 15px;
+     }
+     .home .left-title {
+         font-size: 14px;
+     }
+     .custom-tabs ul.nav-tabs li a {
+         font-size: 14px;
+         padding: 5px 10px;
+     }
+     .custom-tabs .custom-tabs-content .title-tab h4 {
+         font-size: 20px;
+     }
+     .img-holder img {
+         width: 150px;
+         margin: 0 auto;
+     }
+     .custom-tabs .custom-tabs-content .title-tab {
+         position: initial;
+         right: 0;
+         top: 0;
+         h4 {
+             text-align: center;
+         }
+     }
+     .home .section-three .img-team .team-name {
+         font-size: 14px;
+     }
+     .custom-tabs .custom-tabs-content .pad-cont {
+         padding: 20px 10px 0px 10px;
+     }
+     .custom-tabs .custom-tabs-content {
+         padding-bottom: 0px;
+         p {
+             margin-bottom: 0px;
+         }
+     }
+     //end of scss for home page 
  }
