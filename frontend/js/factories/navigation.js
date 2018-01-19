@@ -19,6 +19,11 @@
          anchor: "mission-vision",
          subnav: []
      }, {
+         name: "Products and Offerings",
+         classis: "active",
+         anchor: "product",
+         subnav: []
+     } ,{
          name: "About Us",
          classis: "active",
          anchor: "about",
@@ -32,11 +37,6 @@
          name: "Contact Us",
          classis: "active",
          anchor: "contact",
-         subnav: []
-     }, {
-         name: "Products and Offerings",
-         classis: "active",
-         anchor: "product",
          subnav: []
      }];
 

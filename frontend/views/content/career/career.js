@@ -30,12 +30,12 @@ myApp.controller('CareerCtrl', function ($scope, TemplateService, NavigationServ
                                 animation: true,
                                 templateUrl: 'views/modal/thankyou.html',
                                 scope: $scope,
-                                size: 'sm',
+                                size: 'md',
                             });
                             $timeout(function () {
                                 $scope.thankyou.close();
                                 $state.reload();
-                            }, 1000);
+                            }, 3000);
                         }
                     });
                 }

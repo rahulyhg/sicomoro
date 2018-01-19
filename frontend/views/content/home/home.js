@@ -23,6 +23,6 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         particlesJS.load('particles-js', '../../js/json/particles.json', function () {
             console.log('callback - particles.js config loaded');
         });
-    }, 100);
+    }, 80);
 
 })
