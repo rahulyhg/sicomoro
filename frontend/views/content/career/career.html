@@ -62,17 +62,17 @@
                     </div>-->
                     <div class="form-group">
                         <div class="dateofbirth">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="formData.career.dob" is-open="popup1.opened"
-                                            datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
-                                            name="dob" placeholder="DD/MM/YY" required/>
-                                        <span class="input-group-btn">
+                            <div class="input-group">
+                                <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="formData.career.dob" is-open="popup1.opened"
+                                    datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats"
+                                    name="dob" placeholder="DD/MM/YY" required/>
+                                <span class="input-group-btn">
             <button type="button" class="btn btn-default calender-btn" ng-click="open1()"><i class="fa fa-calendar" aria-hidden="true"></i></button>
                                                     </span>
-                                    </div>
-                                   
-                                </div>
-                                  <span class="errormsg" ng-show="formData.dob.$touched && formData.dob.$invalid">DOB is required.</span>
+                            </div>
+
+                        </div>
+                        <span class="errormsg" ng-show="formData.dob.$touched && formData.dob.$invalid">DOB is required.</span>
                     </div>
                 </div>
             </div>
@@ -88,19 +88,21 @@
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="form-group">
-                        <input type="number" ng-model="formData.career.postCode" class="form-control" id="postCode" placeholder="Post Code" name="postCode">
+                        <input type="number" ng-model="formData.career.postCode" class="form-control" id="postCode" placeholder="Post Code" name="postCode"
+                            required>
                     </div>
                     <span class="errormsg" ng-show="formData.postCode.$touched && formData.postCode.$invalid">Post Code is required.</span>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="form-group">
-                        <input type="text" ng-model="formData.career.state" class="form-control" id="state" placeholder="State" name="state">
+                        <input type="text" ng-model="formData.career.state" class="form-control" id="state" placeholder="State" name="state" required>
                     </div>
                     <span class="errormsg" ng-show="formData.state.$touched && formData.state.$invalid">State is required.</span>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="form-group">
-                        <input type="url" ng-model="formData.career.website" class="form-control" id="website" placeholder="Website" name="website">
+                        <input type="url" ng-model="formData.career.website" class="form-control" id="website" placeholder="Website" name="website"
+                            required>
                     </div>
                     <span class="errormsg" ng-show="formData.website.$touched && formData.website.$invalid">WebSite is required.</span>
                 </div>
@@ -134,7 +136,8 @@
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="form-group">
-                        <input type="number" ng-model="formData.career.Salary" class="form-control" id="Salary" placeholder="Previous Salary" name="salary">
+                        <input type="number" ng-model="formData.career.Salary" class="form-control" id="Salary" placeholder="Previous Salary" name="salary"
+                            required>
                     </div>
                     <span class="errormsg" ng-show="formData.Salary.$touched && formData.Salary.$invalid">Salary is required.</span>
                 </div>
