@@ -333,9 +333,11 @@ a.color-black {
 .pointer-click {
     cursor: pointer;
 }
-.modal-content{
+
+.modal-content {
     margin-top: 150px;
 }
+
 //end of common classes
 //scss for directive
 .heading-bg {
@@ -493,5 +495,12 @@ a.color-black {
         .pad-cont {
             padding: 20px 10px;
         }
+    }
+}
+
+.associate-name {
+    h3 {
+        font-family: 'Geometria-ExtraBold';
+        color: black;
     }
 }
