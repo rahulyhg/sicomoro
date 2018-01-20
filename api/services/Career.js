@@ -39,6 +39,7 @@ var model = {
                 // console.log("User >>> welcomeEmail >>> User.findOneAndUpdate >>> error", created);
                 var emailData = {};
                 emailData.email = "hr@sicomoro.in";
+                emailData.emailOfApplicant = created.email;
                 emailData.subject = "";
                 emailData.filename = "career.ejs";
                 emailData.from = "hr@sicomoro.in"

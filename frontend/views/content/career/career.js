@@ -1,4 +1,4 @@
-myApp.controller('CareerCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal) {
+myApp.controller('CareerCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal, $state) {
     $scope.template = TemplateService.getHTML("content/career/career.html");
     TemplateService.title = "Career"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
@@ -44,27 +44,12 @@ myApp.controller('CareerCtrl', function ($scope, TemplateService, NavigationServ
 
     };
     $scope.reset = function (formData) {
-        console.log("@@@@@@@@@@@@@@@@@@@@@@", $scope.formData);
 
         $scope.formData.career.position = "";
         // $scope.formData.position = "";
         // $scope.formData.career = "";
 
     }
-    // $scope.uploadimagecb = function (img, length) {
-    //     console.log(img)
-    // }
-    // $scope.uploadImage = function (form) {
-    //     console.log("upload image ==================");
-    //     // NavigationService.saveCareer(form, function (data) {
-    //     //     console.log("in save career", data.data);
-    //     //     if (data.data.value) {
-    //     //         // NavigationService.sendCareerApplication(data.data.data, function (data) {
-    //     //         //     console.log("send email ", data.data);
-    //     //         // });
-    //     //     }
-    //     // });
-    // };
     //for date picker
     $scope.today = function () {
         $scope.dt = new Date();
