@@ -30,7 +30,7 @@ module.exports = {
   // emails: ["chintan@wohlig.com", "jagruti@wohlig.com", "tushar@wohlig.com", "chirag@wohlig.com", "harsh@wohlig.com", "prajakta.kamble@wohlig.com", "snehal.thakare@wohlig.com"]
 
   port: 80,
-  realHost: "http://sicomoro.in",
+  realHost: "http://sicomoro.wohlig.co.in",
   emails: ["chintan@wohlig.com", "jagruti@wohlig.com", "tushar@wohlig.com", "chirag@wohlig.com", "harsh@wohlig.com", "prajakta.kamble@wohlig.com", "snehal.thakare@wohlig.com"]
 
   /***************************************************************************
