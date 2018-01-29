@@ -8,12 +8,12 @@
          classis: "active",
          anchor: "home",
          subnav: []
-     }, {
-         name: "The Team",
+     },{
+         name: "About Us",
          classis: "active",
-         anchor: "team",
+         anchor: "about",
          subnav: []
-     }, {
+     },  {
          name: "Mission and Vision",
          classis: "active",
          anchor: "mission-vision",
@@ -24,9 +24,9 @@
          anchor: "product",
          subnav: []
      } ,{
-         name: "About Us",
+         name: "The Team",
          classis: "active",
-         anchor: "about",
+         anchor: "team",
          subnav: []
      }, {
          name: "Careers",

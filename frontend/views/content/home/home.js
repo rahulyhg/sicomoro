@@ -24,5 +24,10 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             console.log('callback - particles.js config loaded');
         });
     }, 80);
-
+    $scope.scrollDown = function () {
+        $('html,body').animate({
+                scrollTop: $(".section-two").offset().top-100
+            },
+            'slow');
+    };
 })

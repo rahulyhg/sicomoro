@@ -20,9 +20,16 @@
     }
     .about-holder {
         padding: 50px 0;
+        display: block;
+        color: black;
         h4 {
             font-size: 22px;
+            color: black;
             font-family: Nunito-SemiBold;
+            &:hover {
+                color: black;
+                text-decoration: none;
+            }
         }
     }
 }

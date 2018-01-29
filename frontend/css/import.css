@@ -10163,6 +10163,23 @@ footer {
   footer .fnt-12 {
     font-size: 12px; }
 
+.scrolltotop {
+  background: white none repeat scroll 0 0;
+  border: 1px solid black;
+  bottom: 20px;
+  color: #fff;
+  display: none;
+  font-size: 20px;
+  height: 40px;
+  padding-top: 5px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 40px;
+  z-index: 99; }
+  .scrolltotop .fa {
+    color: black; }
+
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
@@ -10277,6 +10294,9 @@ a.color-black {
 .pointer-click {
   cursor: pointer; }
 
+.modal-content {
+  margin-top: 150px; }
+
 .heading-bg {
   background: url("../img/title-bg.jpg");
   background-repeat: no-repeat;
@@ -10388,6 +10408,10 @@ a.color-black {
     .custom-tabs .custom-tabs-content .pad-cont {
       padding: 20px 10px; }
 
+.associate-name h3 {
+  font-family: 'Geometria-ExtraBold';
+  color: black; }
+
 .home .section {
   padding: 70px 0; }
 
@@ -10443,6 +10467,15 @@ a.color-black {
   background: #000;
   min-height: 100vh; }
 
+.mouse-scrolldown {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 12px;
+  cursor: pointer; }
+
 .about .section-one {
   margin-bottom: -200px; }
 
@@ -10463,10 +10496,16 @@ a.color-black {
   color: #312418; }
 
 .about .about-holder {
-  padding: 50px 0; }
+  padding: 50px 0;
+  display: block;
+  color: black; }
   .about .about-holder h4 {
     font-size: 22px;
+    color: black;
     font-family: Nunito-SemiBold; }
+    .about .about-holder h4:hover {
+      color: black;
+      text-decoration: none; }
 
 .address {
   -webkit-box-flex: 0.3;
@@ -10619,12 +10658,12 @@ select {
 .career-description {
   margin: 50px 0 0 0; }
 
-.calender-btn {
+.dateofbirth .calender-btn {
   background: transparent;
   border: none; }
-  .calender-btn i {
+  .dateofbirth .calender-btn i {
     font-size: 25px; }
-  .calender-btn:hover, .calender-btn:focus {
+  .dateofbirth .calender-btn:hover, .dateofbirth .calender-btn:focus {
     background: transparent;
     border: none;
     outline: none; }
@@ -10640,7 +10679,7 @@ select {
     font-weight: bold; }
 
 .product-modal-bg {
-  background: url("../img/modalbg1.png");
+  background: url("../img/modalbg1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
@@ -10839,6 +10878,8 @@ select {
     font-size: 20px; }
   .sidemenu ul li a {
     font-size: 15px; }
+  footer {
+    font-size: 14px; }
   .product-bg h3 {
     font-size: 22px;
     text-align: center; }
@@ -10905,12 +10946,15 @@ select {
   .about .img-holder {
     width: 150px;
     float: right; }
-  .about .roots, .about .title-three-about {
+  .about .roots,
+  .about .title-three-about {
     font-size: 20px; }
   .about .about-holder {
     padding: 15px 0; }
   .about .about-holder h4 {
     font-size: 15px; }
+  .home .section-one .section-one-content .one-content-inside {
+    width: 300px; }
   .home .section-one .section-one-content .one-content-inside h4 {
     font-size: 15px; }
   .home .left-title {

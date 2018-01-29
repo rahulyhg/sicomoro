@@ -25,4 +25,5 @@ myApp.controller('headerCtrl', function ($scope, TemplateService) {
             $(".navbar-color-change").css("background", 'transparent');
         }
     });
+
 });
