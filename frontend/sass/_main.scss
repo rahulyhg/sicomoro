@@ -196,6 +196,7 @@ footer {
         font-size: 12px;
     }
 }
+
 .scrolltotop {
     background: white none repeat scroll 0 0;
     border: 1px solid black;
@@ -362,6 +363,25 @@ a.color-black {
 }
 
 //end of common classes
+
+//header backdrop
+.backdrop {
+@include position(fixed,
+0 0 0 0);
+background-color: #000;
+opacity: 0;
+z-index: -1028;
+@include transition(opacity .15s linear);
+}
+.backdropEnable {
+@include position(fixed,
+0 0 0 0);
+background-color: #000;
+opacity: .5;
+z-index: 1028;
+}
+//end of header
+
 //scss for directive
 .heading-bg {
     background: url("../img/title-bg.jpg");

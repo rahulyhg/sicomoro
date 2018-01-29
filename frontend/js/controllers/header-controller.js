@@ -3,6 +3,10 @@ myApp.controller('headerCtrl', function ($scope, TemplateService) {
     $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
     });
+
+    //code for backdrop
+    $scope.isBackdropActive = false;
+  //end of backdrop
     $.fancybox.close(true);
     $scope.getslide = "menu-out";
     $scope.getnav = function () {
@@ -16,6 +20,7 @@ myApp.controller('headerCtrl', function ($scope, TemplateService) {
             $scope.onebar = "firstbar";
             $scope.secondbar = "secondbar";
             $scope.thirdbar = "thirdbar";
+            $scope.isBackdropActive = !$scope.isBackdropActive;
         }
     };
       $(window).scroll(function () {

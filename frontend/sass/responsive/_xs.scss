@@ -30,6 +30,11 @@
      }
      footer {
          font-size: 14px;
+         .footer-para {
+             p {
+                 text-align: center;
+             }
+         }
      }
      //end of scss for common for pages
      //scss for product page
@@ -85,6 +90,9 @@
      .text-associate h3 {
          margin: 0px;
      }
+     .associate-para {
+    min-height: 80px;
+}
      //end of scss for team page
      //scss for career page
      .career-heading p {
