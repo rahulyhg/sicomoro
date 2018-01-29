@@ -11,6 +11,17 @@
      .title-main h3 {
          font-size: 60px;
      }
+     footer{
+         .d-flex{
+             flex-direction: column;
+         }
+         .footer-para{
+             text-align: center;
+         }
+        .footer-menu ul li a {
+    padding: 0 10px;
+}
+     }
      //end of scss for common for pages
      //scss for mission page
      .mission-top-text {
@@ -24,9 +35,7 @@
      .team-member-name h3 {
          font-size: 30px;
      }
-     .associate-para {
-    min-height: 45px;
-}
+
      .associate-img {
          .pull-right {
              float: none !important
@@ -118,7 +127,7 @@
     min-height: 50vh;
 }
 #particles-js{
-     min-height: 65vh;
+     min-height: 50vh;
 }
 
  }

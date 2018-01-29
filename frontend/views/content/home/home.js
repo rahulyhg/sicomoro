@@ -26,7 +26,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
     }, 80);
     $scope.scrollDown = function () {
         $('html,body').animate({
-                scrollTop: $(".section-two").offset().top-50
+                scrollTop: $(".section-two").offset().top
             },
             'slow');
     };

@@ -35,7 +35,14 @@
                  text-align: center;
              }
          }
+          .d-flex{
+             flex-direction: column;
+         }
+         .footer-para{
+             text-align: center;
+         }
      }
+
      //end of scss for common for pages
      //scss for product page
      .product-bg h3 {
@@ -90,9 +97,6 @@
      .text-associate h3 {
          margin: 0px;
      }
-     .associate-para {
-    min-height: 80px;
-}
      //end of scss for team page
      //scss for career page
      .career-heading p {
@@ -187,5 +191,8 @@
              margin-bottom: 0px;
          }
      }
+     #particles-js {
+    min-height: 70vh;
+}
      //end of scss for home page 
  }
