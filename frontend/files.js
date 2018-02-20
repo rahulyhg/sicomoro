@@ -6,7 +6,7 @@ module.exports = [
   'bower_components/fancybox/dist/jquery.fancybox.js',
   'bower_components/smart-app-banner/smart-app-banner.js',
   "bower_components/moment/min/moment.min.js",
-
+  'bower_components/highcharts/highcharts.js',
 
   //Angular Libs
   'bower_components/angular/angular.js',
@@ -26,6 +26,8 @@ module.exports = [
   "bower_components/particles.js/particles.js",
   "bower_components/angular-promise-buttons/dist/angular-promise-buttons.js",
   'bower_components/angularjs-imageupload-directive/public/javascripts/imageupload.js',
+  'bower_components/highcharts-ng/dist/highcharts-ng.min.js',
+
 
   //App.js
   'frontend/js/app.js',
