@@ -1,6 +1,7 @@
 myApp.controller('CareerCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal, $state) {
     $scope.template = TemplateService.getHTML("content/career/career.html");
     TemplateService.title = "Career"; //This is the Title of the Website
+    TemplateService.logoNone = ""; 
     $scope.navigation = NavigationService.getNavigation();
     $scope.title = "careers";
     $scope.test = {}

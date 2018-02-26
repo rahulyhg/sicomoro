@@ -55,6 +55,7 @@ $color-brown:#312418;
 body {
     font-family: 'Nunito';
     font-size: 18px;
+        padding-top: 50px;
 }
 
 img.loading {
@@ -75,7 +76,7 @@ img.doneLoading {
 
 //menu 
 .navbar-default {
-    background-color: transparent;
+    background-color: black;
     border-color: transparent;
 }
 
@@ -546,10 +547,25 @@ z-index: 1028;
         }
     }
 }
-
 .associate-name {
     h3 {
         font-family: 'Geometria-ExtraBold';
         color: black;
     }
 }
+.relate{
+    position: relative;
+}
+.logo{
+    width: 200px;
+    margin: 0 auto;
+}
+.logoNone{
+display: none !important;
+}
+
+//new scss common for mission and product page
+    .mission-product-bg {
+        background: url('../img/home/bg_client.png') no-repeat;
+        background-size: cover;
+    }

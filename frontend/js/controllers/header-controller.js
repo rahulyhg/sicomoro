@@ -23,12 +23,12 @@ myApp.controller('headerCtrl', function ($scope, TemplateService) {
             $scope.isBackdropActive = !$scope.isBackdropActive;
         }
     };
-      $(window).scroll(function () {
-        if ($(document).scrollTop() > 100) {
-            $(".navbar-color-change").css("background", 'rgba(0, 0, 0, 0.34)');
-        } else {
-            $(".navbar-color-change").css("background", 'transparent');
-        }
-    });
+    //   $(window).scroll(function () {
+    //     if ($(document).scrollTop() > 100) {
+    //         $(".navbar-color-change").css("background", 'rgba(0, 0, 0, 0.34)');
+    //     } else {
+    //         $(".navbar-color-change").css("background", 'transparent');
+    //     }
+    // });
 
 });

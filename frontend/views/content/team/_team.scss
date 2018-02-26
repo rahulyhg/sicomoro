@@ -1,58 +1,82 @@
-.team-padding {
-    padding: 25px 50px;
-}
+// .team-padding {
+//     padding: 25px 50px;
+// }
 
-.team-main {
-    p {
-        font-weight: 600;
-        font-family: 'Nunito';
+// .team-main {
+//     p {
+//         font-weight: 600;
+//         font-family: 'Nunito';
+//     }
+// }
+
+// .associate-para {
+//     display: -webkit-box;
+//     height: 75px;
+//     -webkit-line-clamp: 3;
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+// }
+
+// .associate-img {
+//     padding-bottom: 30px
+// }
+
+// .text-associate h3 {
+//     font-size: 32px;
+//     font-family: 'Geometria-Medium';
+//     margin-bottom: 20px;
+// }
+
+// .associate-padding {
+//     padding: 50px 0;
+// }
+
+// .associate-name {
+//     font-family: 'Geometria-Medium';
+//     h3 {
+//         margin-top: 15px;
+//         margin-bottom: 0px;
+//     }
+// }
+
+// .team-member-name {
+//     h3 {
+//         font-size: 38px;
+//         text-transform: uppercase;
+//         font-family: 'Geometria-ExtraBold';
+//         margin: 0;
+//         color: black;
+//     }
+//     p {
+//         margin: 0 0 20px;
+//     }
+// }
+    .section-three {
+        background: url('../img/home/bg_team.png') no-repeat;
+        background-size: cover;
+        .left-title {
+            left: 45px;
+        }
+        .img-team {
+            img {
+                margin: 0 auto;
+            }
+            .team-name {
+                padding: 10px 0;
+                text-align: center;
+                font-family: 'Geometria';
+            }
+        }
     }
-}
-
-.associate-para {
-    display: -webkit-box;
-    height: 75px;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.associate-img {
-    padding-bottom: 30px
-}
-
-.text-associate h3 {
-    font-size: 32px;
-    font-family: 'Geometria-Medium';
-    margin-bottom: 20px;
-}
-
-.associate-padding {
-    padding: 50px 0;
-}
-
-.associate-name {
-    font-family: 'Geometria-Medium';
-    h3 {
-        margin-top: 15px;
-        margin-bottom: 0px;
-    }
-}
-
-.team-member-name {
-    h3 {
-        font-size: 38px;
-        text-transform: uppercase;
-        font-family: 'Geometria-ExtraBold';
-        margin: 0;
-        color: black;
-    }
-    p {
-        margin: 0 0 20px;
-    }
-}
-
 .team-bg {
     background: url('../img/team/team_bg.png') no-repeat;
+}
+.founder-title {
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    top: 20%;
+    left: 20px;
+    font-family: Nunito-SemiBold;
 }
