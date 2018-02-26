@@ -35,14 +35,13 @@
                  text-align: center;
              }
          }
-          .d-flex{
+         .d-flex {
              flex-direction: column;
          }
-         .footer-para{
+         .footer-para {
              text-align: center;
          }
      }
-
      //end of scss for common for pages
      //scss for product page
      .product-bg h3 {
@@ -69,6 +68,16 @@
      }
      //end of scss for product page
      //scss for mission page
+     .section-four {
+         .left-title {
+             left: -40px !important;
+             font-size: 12px;
+         }
+     }
+     .mission-product-bg .left-title {
+         left: -30px;
+         font-size: 12px;
+     }
      .mission-bg {
          .flex-reverse {
              flex-direction: column-reverse;
@@ -89,6 +98,9 @@
      }
      //end of scss for mission page
      //scss for team page
+     .section-three .img-team .team-name {
+         font-size: 11px;
+     }
      .associate-name h3,
      .text-associate h3,
      .team-member-name h3 {
@@ -96,6 +108,18 @@
      }
      .text-associate h3 {
          margin: 0px;
+     }
+     .section-three .left-title,
+     {
+         left: -10px;
+         font-size: 12px;
+     }
+     .founder-title {
+         left: -35px;
+         font-size: 12px;
+     }
+     .associate-img {
+         padding: 10px 0;
      }
      //end of scss for team page
      //scss for career page
@@ -129,6 +153,12 @@
      }
      //end of scss for contact page
      //scss for about us page
+     .about {
+         .img-holder img {
+             width: 100%;
+             margin: 0 auto;
+         }
+     }
      .about .section-one .section-padding {
          padding: 25px 0px;
      }
@@ -136,12 +166,13 @@
          margin-bottom: -98px;
      }
      .about .img-holder {
-         width: 150px;
-         float: right;
+         width: 80px;
+         margin: 0px auto;
      }
      .about .roots,
      .about .title-three-about {
          font-size: 20px;
+         margin-top: 65px;
      }
      .about .about-holder {
          padding: 15px 0;
@@ -192,7 +223,13 @@
          }
      }
      #particles-js {
-    min-height: 70vh;
+         min-height: 100vh;
+     }
+     .logo-home {
+         width: 100%;
+     }
+     .home .section-one .section-one-content {
+    bottom: 200px;
 }
      //end of scss for home page 
  }

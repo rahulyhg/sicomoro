@@ -55,7 +55,7 @@ $color-brown:#312418;
 body {
     font-family: 'Nunito';
     font-size: 18px;
-        padding-top: 50px;
+    padding-top: 50px;
 }
 
 img.loading {
@@ -118,7 +118,6 @@ nav li:hover .dropdown-menu {
                 width: 10px;
                 float: right;
             }
-            
             &.firstbar {
                 @include transform(translate(0px,
                 6px)rotate(50deg));
@@ -160,6 +159,7 @@ nav li:hover .dropdown-menu {
         @include transform (translateY(0));
     }
 }
+
 #map img {
     opacity: 1;
 }
@@ -198,12 +198,15 @@ footer {
         font-size: 12px;
     }
 }
-.flex-foot-1{
-    flex:1;
+
+.flex-foot-1 {
+    flex: 1;
 }
-.flex-foot-2{
-    flex:0.5;
+
+.flex-foot-2 {
+    flex: 0.5;
 }
+
 .scrolltotop {
     background: white none repeat scroll 0 0;
     border: 1px solid black;
@@ -370,25 +373,25 @@ a.color-black {
 }
 
 //end of common classes
-
 //header backdrop
 .backdrop {
-@include position(fixed,
-0 0 0 0);
-background-color: #000;
-opacity: 0;
-z-index: -1028;
-@include transition(opacity .15s linear);
+    @include position(fixed,
+    0 0 0 0);
+    background-color: #000;
+    opacity: 0;
+    z-index: -1028;
+    @include transition(opacity .15s linear);
 }
-.backdropEnable {
-@include position(fixed,
-0 0 0 0);
-background-color: #000;
-opacity: .5;
-z-index: 1028;
-}
-//end of header
 
+.backdropEnable {
+    @include position(fixed,
+    0 0 0 0);
+    background-color: #000;
+    opacity: .5;
+    z-index: 1028;
+}
+
+//end of header
 //scss for directive
 .heading-bg {
     background: url("../img/title-bg.jpg");
@@ -413,7 +416,7 @@ z-index: 1028;
 
 //min-height 100vh
 .min-full-height {
-    min-height: 100vh;
+    height: calc(100vh - 50px);
 }
 
 //relative
@@ -425,11 +428,10 @@ z-index: 1028;
 .left-title {
     position: absolute;
     @include transform(rotate(-90deg));
-    top: 20%;
+    top: 50%;
     left: 20px;
     font-family: Nunito-SemiBold;
 }
-
 //end of scss for directive
 //common for mission-vision and product page
 .img-right-padding {
@@ -553,19 +555,22 @@ z-index: 1028;
         color: black;
     }
 }
-.relate{
+
+.relate {
     position: relative;
 }
-.logo{
-    width: 200px;
+.logo-home {
+    width: 500px;
     margin: 0 auto;
+    padding: 50px 0;
 }
-.logoNone{
-display: none !important;
+
+.logoNone {
+    display: none !important;
 }
 
 //new scss common for mission and product page
-    .mission-product-bg {
-        background: url('../img/home/bg_client.png') no-repeat;
-        background-size: cover;
-    }
+.mission-product-bg {
+    background: url('../img/home/bg_client.png') no-repeat;
+    background-size: cover;
+}

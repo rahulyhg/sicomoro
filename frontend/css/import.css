@@ -10350,7 +10350,7 @@ a.color-black {
     color: #3a3a3a; }
 
 .min-full-height {
-  min-height: 100vh; }
+  height: calc(100vh - 50px); }
 
 .post-rel {
   position: relative; }
@@ -10359,7 +10359,7 @@ a.color-black {
   position: absolute;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  top: 20%;
+  top: 50%;
   left: 20px;
   font-family: Nunito-SemiBold; }
 
@@ -10449,9 +10449,10 @@ a.color-black {
 .relate {
   position: relative; }
 
-.logo {
-  width: 200px;
-  margin: 0 auto; }
+.logo-home {
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px 0; }
 
 .logoNone {
   display: none !important; }
@@ -10467,7 +10468,7 @@ a.color-black {
   overflow: hidden; }
   .home .section-one .section-one-content {
     position: absolute;
-    bottom: 100px;
+    bottom: 150px;
     width: 100%;
     left: 0;
     z-index: 2;
@@ -10536,7 +10537,8 @@ a.color-black {
 
 .address-line {
   padding: 30px 60px; }
-  .address-line a, .address-line p {
+  .address-line a,
+  .address-line p {
     font-size: 14px;
     font-family: 'Nunito';
     color: #000000; }
@@ -10555,7 +10557,8 @@ a.color-black {
 .map-contact {
   -webkit-box-flex: 0.7;
       -ms-flex: 0.7;
-          flex: 0.7; }
+          flex: 0.7;
+  margin: 31px 0; }
 
 .mission-top-text {
   padding: 20px 150px 20px 150px; }
@@ -10711,7 +10714,8 @@ select {
   background: url("../img/home/bg_team.png") no-repeat;
   background-size: cover; }
   .section-three .left-title {
-    left: 45px; }
+    left: 45px;
+    top: 20%; }
   .section-three .img-team img {
     margin: 0 auto; }
   .section-three .img-team .team-name {
@@ -10798,6 +10802,9 @@ select {
     padding: 20px 50px 20px 50px; }
   .mission-bg h3 {
     font-size: 30px; }
+  .mission-product-bg .left-title {
+    left: -30px;
+    font-size: 12px; }
   .team-member-name h3 {
     font-size: 30px; }
   .associate-img .pull-right {
@@ -10837,10 +10844,14 @@ select {
     text-align: center; }
   .associate-img {
     padding: 25px 0; }
+  .founder-title {
+    left: -45px; }
+  .section-three .left-title {
+    left: -20px; }
   .product-bg h3 {
     font-size: 30px; }
-  .about .img-holder {
-    width: 310px; }
+  .mission-product-bg, .about {
+    height: 85vh; }
   .about .roots,
   .about .title-three-about {
     font-size: 30px; }
@@ -10849,6 +10860,8 @@ select {
     padding: 10px 5px; }
   .custom-tabs .custom-tabs-content .title-tab h4 {
     font-size: 32px; }
+  .home .section-one .section-one-content {
+    bottom: 350px; }
   .home .left-title {
     left: -35px; }
   .home .section-three .left-title {
@@ -10858,7 +10871,7 @@ select {
   .min-full-height {
     min-height: 50vh; }
   #particles-js {
-    min-height: 50vh; } }
+    min-height: 100vh; } }
 
 @media (max-width: 767px) {
   p {
@@ -10912,6 +10925,12 @@ select {
     padding: 0 100px; }
   .product-modal-bg p {
     padding: 10px 10px 20px 10px; }
+  .section-four .left-title {
+    left: -40px !important;
+    font-size: 12px; }
+  .mission-product-bg .left-title {
+    left: -30px;
+    font-size: 12px; }
   .mission-bg .flex-reverse {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -10926,12 +10945,22 @@ select {
     text-align: center; }
   .mission-top-text {
     padding: 20px 20px 20px 20px; }
+  .section-three .img-team .team-name {
+    font-size: 11px; }
   .associate-name h3,
   .text-associate h3,
   .team-member-name h3 {
     font-size: 20px; }
   .text-associate h3 {
     margin: 0px; }
+  .section-three .left-title {
+    left: -10px;
+    font-size: 12px; }
+  .founder-title {
+    left: -35px;
+    font-size: 12px; }
+  .associate-img {
+    padding: 10px 0; }
   .career-heading p {
     font-size: 20px; }
   .personal-info p {
@@ -10954,16 +10983,20 @@ select {
     padding: 30px 40px; }
   .address-line h2 {
     font-size: 30px; }
+  .about .img-holder img {
+    width: 100%;
+    margin: 0 auto; }
   .about .section-one .section-padding {
     padding: 25px 0px; }
   .about .section-one {
     margin-bottom: -98px; }
   .about .img-holder {
-    width: 150px;
-    float: right; }
+    width: 80px;
+    margin: 0px auto; }
   .about .roots,
   .about .title-three-about {
-    font-size: 20px; }
+    font-size: 20px;
+    margin-top: 65px; }
   .about .about-holder {
     padding: 15px 0; }
   .about .about-holder h4 {
@@ -10997,4 +11030,8 @@ select {
     .custom-tabs .custom-tabs-content p {
       margin-bottom: 0px; }
   #particles-js {
-    min-height: 70vh; } }
+    min-height: 100vh; }
+  .logo-home {
+    width: 100%; }
+  .home .section-one .section-one-content {
+    bottom: 200px; } }

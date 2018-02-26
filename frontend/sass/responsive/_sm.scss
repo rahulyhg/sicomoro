@@ -7,20 +7,19 @@
      p {
          font-size: 15px;
      }
-     
      .title-main h3 {
          font-size: 60px;
      }
-     footer{
-         .d-flex{
+     footer {
+         .d-flex {
              flex-direction: column;
          }
-         .footer-para{
+         .footer-para {
              text-align: center;
          }
-        .footer-menu ul li a {
-    padding: 0 10px;
-}
+         .footer-menu ul li a {
+             padding: 0 10px;
+         }
      }
      //end of scss for common for pages
      //scss for mission page
@@ -30,12 +29,17 @@
      .mission-bg h3 {
          font-size: 30px;
      }
+     .mission-product-bg {
+         .left-title {
+             left: -30px;
+             font-size: 12px;
+         }
+     }
      //end of scss for mission page
      //scss for team page
      .team-member-name h3 {
          font-size: 30px;
      }
-
      .associate-img {
          .pull-right {
              float: none !important
@@ -78,7 +82,13 @@
          text-align: center
      }
      .associate-img {
-    padding: 25px 0;
+         padding: 25px 0;
+     }
+     .founder-title{
+            left: -45px;
+     }
+     .section-three .left-title {
+        left: -20px;
 }
      //end of scss for team page
      //scss for product page
@@ -87,8 +97,8 @@
      }
      //end of scss for product page
      //scss for about us page
-     .about .img-holder {
-         width: 310px;
+     .mission-product-bg,.about{
+         height: 85vh;
      }
      .about .roots,
      .about .title-three-about {
@@ -108,6 +118,9 @@
          }
      }
      //home
+     .home .section-one .section-one-content{
+         bottom: 350px;
+     }
      .home {
          .left-title {
              left: -35px;
@@ -124,10 +137,9 @@
          }
      }
      .min-full-height {
-    min-height: 50vh;
-}
-#particles-js{
-     min-height: 50vh;
-}
-
+         min-height: 50vh;
+     }
+     #particles-js {
+         min-height: 100vh;
+     }
  }
