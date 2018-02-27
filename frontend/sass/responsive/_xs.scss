@@ -69,6 +69,9 @@
      //end of scss for product page
      //scss for mission page
      .section-four {
+         height: 115vh !important;
+     }
+     .section-four {
          .left-title {
              left: -40px !important;
              font-size: 12px;
@@ -229,7 +232,11 @@
          width: 100%;
      }
      .home .section-one .section-one-content {
-    bottom: 200px;
-}
+         bottom: 200px;
+     }
+     .mission-product-bg,
+     .about {
+         padding-top: 0px;
+     }
      //end of scss for home page 
  }

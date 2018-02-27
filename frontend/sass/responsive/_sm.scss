@@ -99,6 +99,7 @@
      //scss for about us page
      .mission-product-bg,.about{
          height: 85vh;
+         padding-top: 110px;
      }
      .about .roots,
      .about .title-three-about {
@@ -142,4 +143,8 @@
      #particles-js {
          min-height: 100vh;
      }
+     //scss for contact page
+        .contact-main{
+height: 85vh;
+        } 
  }

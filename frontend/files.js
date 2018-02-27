@@ -58,8 +58,7 @@ module.exports = [
   'frontend/views/content/career/career.js',
   'frontend/views/content/contact/contact.js',
   'frontend/js/controllers/controller.js',
-    'frontend/js/controllers/footer-controller.js',
-    'frontend/js/controllers/header-inner.js',
+  'frontend/js/controllers/footer-controller.js',
   'frontend/js/controllers/header-controller.js',
   'frontend/js/controllers/language-controller.js',
 ];
