@@ -11,14 +11,20 @@ var myApp = angular.module('myApp', [
     'angular-flexslider',
     'ui.swiper',
     'angularPromiseButtons',
-    'toastr'
+    'toastr',
+    'angular-loading-bar'
     // 'highcharts-ng'
 ]);
 
 // Define all the routes below
-myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
+myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider,cfpLoadingBarProvider) {
     var tempateURL = "views/template/template.html"; //Default Template URL
-
+ //for loader
+    cfpLoadingBarProvider.includeSpinner = true;
+    cfpLoadingBarProvider.includeBar = true;
+    // cfpLoadingBarProvider.parentSelector = '#loading-bar-container';
+    cfpLoadingBarProvider.spinnerTemplate = '<div class="spinner-overlay"><img class="spinner" src="frontend/img/fancybox_loading.gif"/></div>';
+    //End of loader
     // for http request with session
     $httpProvider.defaults.withCredentials = true;
     $stateProvider

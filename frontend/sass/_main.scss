@@ -575,3 +575,11 @@ a.color-black {
     background: url('../img/home/bg_client.png') no-repeat;
     background-size: cover;
 }
+.spinner {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    opacity: 1;
+}
