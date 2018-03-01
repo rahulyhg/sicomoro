@@ -18,7 +18,7 @@ var myApp = angular.module('myApp', [
 ]);
 
 // Define all the routes below
-myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider,cfpLoadingBarProvider) {
+myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
     var tempateURL = "views/template/template.html"; //Default Template URL
  //for loader
     // cfpLoadingBarProvider.includeSpinner = true;
