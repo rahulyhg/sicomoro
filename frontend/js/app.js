@@ -11,9 +11,10 @@ var myApp = angular.module('myApp', [
     'angular-flexslider',
     'ui.swiper',
     'angularPromiseButtons',
-    'toastr',
-    'angular-loading-bar'
-    // 'highcharts-ng'
+    'toastr'
+    // ,
+    // 'angular-loading-bar'
+    
 ]);
 
 // Define all the routes below
