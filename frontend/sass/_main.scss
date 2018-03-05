@@ -501,7 +501,6 @@ a.color-black {
         @include transition(all ease 300ms);
     }
 }
-
 //end of common for mission-vision and product page
 //bg brown
 // about @page
@@ -511,6 +510,7 @@ a.color-black {
 
 //tabs
 .custom-tabs {
+    position: relative;
     padding: 20px 0;
     ul.nav-tabs {
         border-width: 0;
@@ -537,7 +537,7 @@ a.color-black {
         padding: 20px 0;
         .title-tab {
             position: absolute;
-            right: 30px;
+            left: 30px;
             top: 130px;
             h4 {
                 font-family: 'Geometria-ExtraBold';
@@ -565,7 +565,6 @@ a.color-black {
     margin: 0 auto;
     padding: 50px 0;
 }
-
 
 .logoNone {
     display: none !important;

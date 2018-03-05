@@ -142,4 +142,10 @@ myApp.controller('CareerCtrl', function ($scope, TemplateService, NavigationServ
 
         return '';
     }
+      $scope.scrollDown = function () {
+        $('html,body').animate({
+                scrollTop: $("footer").offset().top
+            },
+            'slow');
+    };
 });

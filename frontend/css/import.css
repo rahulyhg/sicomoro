@@ -10413,6 +10413,7 @@ a.color-black {
   background: #312418; }
 
 .custom-tabs {
+  position: relative;
   padding: 20px 0; }
   .custom-tabs ul.nav-tabs {
     border-width: 0; }
@@ -10433,7 +10434,7 @@ a.color-black {
     padding: 20px 0; }
     .custom-tabs .custom-tabs-content .title-tab {
       position: absolute;
-      right: 30px;
+      left: 30px;
       top: 130px; }
       .custom-tabs .custom-tabs-content .title-tab h4 {
         font-family: 'Geometria-ExtraBold';
@@ -10483,8 +10484,7 @@ a.color-black {
     z-index: 2;
     color: #fff; }
     .home .section-one .section-one-content .one-content-inside {
-      width: 700px;
-      margin: 0 auto; }
+      width: 700px; }
       .home .section-one .section-one-content .one-content-inside h4 {
         font-size: 34px;
         font-family: 'Geometria-ExtraBold'; }
@@ -10500,17 +10500,6 @@ a.color-black {
   background: #000;
   min-height: 100vh; }
 
-.mouse-scrolldown {
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  font-size: 12px;
-  cursor: pointer;
-  -webkit-animation: bounce 2s infinite;
-          animation: bounce 2s infinite; }
-
 .about {
   background: url("../img/home/bg_team.png") no-repeat;
   background-size: cover; }
@@ -10525,17 +10514,17 @@ a.color-black {
     color: #aeaaa7;
     width: 60%; }
   .about .title-three-about {
-    color: #312418; }
+    color: #3a3a3a; }
   .about .about-holder {
     padding: 50px 0;
     display: block;
-    color: black; }
+    color: #3a3a3a; }
     .about .about-holder h4 {
       font-size: 22px;
-      color: black;
+      color: #3a3a3a;
       font-family: Nunito-SemiBold; }
       .about .about-holder h4:hover {
-        color: black;
+        color: #3a3a3a;
         text-decoration: none; }
 
 .address {
@@ -10679,6 +10668,7 @@ select {
   color: black; }
 
 .career-description {
+  position: relative;
   margin: 50px 0 0 0; }
 
 .dateofbirth .calender-btn {
@@ -10691,11 +10681,33 @@ select {
     border: none;
     outline: none; }
 
+.mouse-scrolldown {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite; }
+
 .section-four .left-title {
   left: 8px; }
 
 .section-four .section-four-content p {
   font-family: 'Nunito-SemiBold'; }
+
+.section-four .mouse-scrolldown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite; }
 
 .product-modal-bg {
   background: url("../img/modalbg1.jpg");
@@ -10741,6 +10753,9 @@ select {
   top: 20%;
   left: 20px;
   font-family: Nunito-SemiBold; }
+
+.founder-bottom {
+  margin-bottom: 23px; }
 
 #fancybox-loading,
 .fancybox-close,

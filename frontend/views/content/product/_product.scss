@@ -10,18 +10,32 @@
 //         font-weight: bold;
 //     }
 // }
-    .section-four {
-        // background: url('../img/home/bg_products.png') no-repeat;
-        // background-size: cover;
-        .left-title {
-            left: 8px;
-        }
-        .section-four-content {
-            p {
-                font-family: 'Nunito-SemiBold';
-            }
+.section-four {
+    // background: url('../img/home/bg_products.png') no-repeat;
+    // background-size: cover;
+    .left-title {
+        left: 8px;
+    }
+    .section-four-content {
+        p {
+            font-family: 'Nunito-SemiBold';
         }
     }
+    .mouse-scrolldown {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        font-size: 12px;
+        cursor: pointer;
+        animation: bounce 2s infinite;
+    }
+}
+
 //scss for product modal
 .product-modal-bg {
     background: url("../img/modalbg1.jpg");

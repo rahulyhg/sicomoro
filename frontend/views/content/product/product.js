@@ -22,4 +22,10 @@ myApp.controller('ProductCtrl', function ($scope, TemplateService, NavigationSer
         });
 
     };
+     $scope.scrollDown = function () {
+        $('html,body').animate({
+                scrollTop: $("footer").offset().top
+            },
+            'slow');
+    };
 });
