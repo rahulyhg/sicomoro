@@ -37,6 +37,9 @@
 }
 
 #particles-js {
-    background: #000;
+    background: #000 url('../img/home/animationbg.png');
+    // background-color: #000;
+    // background-image: url('../img/home/animationbg.png') no-repeat;
+    background-size: cover;
     min-height: 100vh;
 }

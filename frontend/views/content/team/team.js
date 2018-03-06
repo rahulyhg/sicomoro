@@ -34,6 +34,10 @@ myApp.controller('TeamCtrl', function ($scope, TemplateService, NavigationServic
         if (data == "radhika") {
             $scope.team = "Radhika Ringshia has recently completed her Bachelor in Business Administration from the Kingston Business School, London. Prior to her graduation she has interned and worked  at some prestigious brands such as McGill Wealth Management (associate partner practice of St. James’s Place Wealth Management), KPMG, Kotak Mahindra Bank and Electronics Bazaar. Having just started her professional career, she intends to gain work experience and at the same time finish her further studies."
         }
+          if (data == "varun") {
+            $scope.team = "Varun hails from a business family specializing into fit outs for commercial spaces, windows and façade solutions for developers, as well as being actively involved in the trading of secondary market investments. Perhaps influenced by his family’s involvement in the financial markets over the last 25 years, Varun also pursued his keen interest in the field as a full time professional after having completed his undergraduate degree from HR College of commerce and economics, Mumbai. He also holds a post graduate degree – MSc in Entrepreneurship Management from the coveted European Business School, London."
+        }
+      
         $scope.teamModal = $uibModal.open({
             animation: true,
             templateUrl: 'views/modal/team-modal.html',
