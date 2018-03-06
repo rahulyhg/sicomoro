@@ -25,6 +25,6 @@ myApp.controller('ProductCtrl', function ($scope, TemplateService, NavigationSer
      $scope.scrollDown = function () {
         $('html,body').animate({
                 scrollTop: $("footer").offset().top
-            },2000);
+            },3000);
     };
 });
