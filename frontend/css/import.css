@@ -10455,12 +10455,10 @@ a.color-black {
   margin: 0 auto;
   padding: 50px 0; }
 
-.logoNone {
-  display: none !important; }
-
 .mission-product-bg {
   background: url("../img/home/bg_client.png") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 100vh; }
 
 .spinner {
   position: fixed;
@@ -10502,7 +10500,9 @@ a.color-black {
 
 .about {
   background: url("../img/home/bg_team.png") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 100vh;
+  position: relative; }
   .about .img-holder {
     width: 130px; }
   .about .roots,
@@ -10556,6 +10556,9 @@ a.color-black {
       -ms-flex: 0.7;
           flex: 0.7;
   margin: 31px 0; }
+
+.contact-main .left-title {
+  left: -15px; }
 
 .mission-top-text {
   padding: 20px 150px 20px 150px; }
@@ -10613,15 +10616,21 @@ a.color-black {
   /* Microsoft Edge */
   color: black; }
 
+.career-form .left-title {
+  top: 10%;
+  left: 0px; }
+
 .upload-main {
   position: relative; }
 
-.dateofbirth .form-control, .upload .form-control {
+.dateofbirth .form-control,
+.upload .form-control {
   border-radius: 0;
   border: none;
   background: transparent; }
 
-.dateofbirth, .upload {
+.dateofbirth,
+.upload {
   border-radius: 10px;
   background: #f5f5f5;
   border: 1px solid black; }
@@ -10670,6 +10679,16 @@ select {
 .career-description {
   position: relative;
   margin: 50px 0 0 0; }
+  .career-description .mouse-scrolldown {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 12px;
+    cursor: pointer;
+    -webkit-animation: bounce 2s infinite;
+            animation: bounce 2s infinite; }
 
 .dateofbirth .calender-btn {
   background: transparent;
@@ -10680,17 +10699,6 @@ select {
     background: transparent;
     border: none;
     outline: none; }
-
-.mouse-scrolldown {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  font-size: 12px;
-  cursor: pointer;
-  -webkit-animation: bounce 2s infinite;
-          animation: bounce 2s infinite; }
 
 .section-four .left-title {
   left: 8px; }
@@ -10757,6 +10765,9 @@ select {
 .founder-bottom {
   margin-bottom: 23px; }
 
+.team-main {
+  min-height: 100vh; }
+
 #fancybox-loading,
 .fancybox-close,
 .fancybox-next span,
@@ -10797,6 +10808,12 @@ select {
 .fancybox-nav.fancybox-prev span {
   background-image: url(../img/prev.png); }
 
+@media (min-width: 1366px) {
+  .contact-main {
+    min-height: 100vh; }
+  .section-one .section-one-content {
+    bottom: 35%; } }
+
 @media (max-width: 1199px) {
   .section-padding {
     padding: 25px 64px; }
@@ -10821,6 +10838,8 @@ select {
     text-align: center; }
   footer .footer-menu ul li a {
     padding: 0 10px; }
+  .left-title {
+    left: 0; }
   .mission-top-text {
     padding: 20px 50px 20px 50px; }
   .mission-bg h3 {
@@ -10868,7 +10887,7 @@ select {
   .associate-img {
     padding: 25px 0; }
   .founder-title {
-    left: -45px; }
+    left: -35px; }
   .section-three .left-title {
     left: -20px; }
   .product-bg h3 {
@@ -10897,9 +10916,19 @@ select {
   #particles-js {
     min-height: 100vh; }
   .contact-main {
-    height: 85vh; } }
+    height: 85vh; }
+  .career-form .left-title {
+    left: -35px; }
+  .career-description .mouse-scrolldown {
+    bottom: -30px; } }
 
 @media (max-width: 767px) {
+  .left-title {
+    left: -10px;
+    font-size: 15px; }
+  .mobi-logo img {
+    width: 180px;
+    height: 35px; }
   p {
     font-size: 14px; }
   .d-flex {
@@ -10989,6 +11018,8 @@ select {
     font-size: 12px; }
   .associate-img {
     padding: 10px 0; }
+  .career-form .left-title {
+    left: -30px; }
   .career-heading p {
     font-size: 20px; }
   .personal-info p {

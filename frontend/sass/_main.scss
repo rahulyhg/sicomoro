@@ -501,13 +501,13 @@ a.color-black {
         @include transition(all ease 300ms);
     }
 }
+
 //end of common for mission-vision and product page
 //bg brown
 // about @page
 .bg-brown {
     background: $color-brown;
 }
-
 //tabs
 .custom-tabs {
     position: relative;
@@ -556,7 +556,6 @@ a.color-black {
         color: black;
     }
 }
-
 .relate {
     position: relative;
 }
@@ -565,15 +564,11 @@ a.color-black {
     margin: 0 auto;
     padding: 50px 0;
 }
-
-.logoNone {
-    display: none !important;
-}
-
 //new scss common for mission and product page
 .mission-product-bg {
     background: url('../img/home/bg_client.png') no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
 .spinner {
     position: fixed;
@@ -583,3 +578,4 @@ a.color-black {
     z-index: 9999;
     opacity: 1;
 }
+

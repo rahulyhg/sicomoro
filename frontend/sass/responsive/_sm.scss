@@ -21,6 +21,9 @@
              padding: 0 10px;
          }
      }
+     .left-title{
+         left:0;
+     }
      //end of scss for common for pages
      //scss for mission page
      .mission-top-text {
@@ -85,7 +88,7 @@
          padding: 25px 0;
      }
      .founder-title{
-            left: -45px;
+            left: -35px;
      }
      .section-three .left-title {
         left: -20px;
@@ -147,4 +150,11 @@
         .contact-main{
 height: 85vh;
         } 
+        //scss for career page
+        .career-form .left-title{
+            left:-35px;
+        }
+        .career-description .mouse-scrolldown{
+            bottom: -30px;
+        }
  }

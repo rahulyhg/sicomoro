@@ -1,11 +1,14 @@
 .about {
-      background: url('../img/home/bg_team.png') no-repeat;
-        background-size: cover;
+    background: url('../img/home/bg_team.png') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
     .section-one {
         // margin-bottom: -200px;
     }
     .img-holder {
-        width: 130px    }
+        width: 130px
+    }
     .roots,
     .title-three-about {
         font-size: 40px;

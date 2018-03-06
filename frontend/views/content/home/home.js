@@ -1,7 +1,7 @@
 myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $window, $http) {
     $scope.template = TemplateService.getHTML("content/home/home.html");
     TemplateService.title = "Home"; //This is the Title of the Website
-     TemplateService.footer="";
+    TemplateService.footer="";
     TemplateService.logoNone = "logoNone"; 
     $scope.navigation = NavigationService.getNavigation();
     console.log("main-logomain-logomain-logomain-logo");

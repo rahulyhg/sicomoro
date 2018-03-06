@@ -1,4 +1,4 @@
-myApp.controller('headerCtrl', function ($scope, TemplateService) {
+myApp.controller('headerCtrl', function ($scope, TemplateService,$state) {
     $scope.template = TemplateService;
     $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
@@ -30,5 +30,7 @@ myApp.controller('headerCtrl', function ($scope, TemplateService) {
     //         $(".navbar-color-change").css("background", 'transparent');
     //     }
     // });
+    $scope.logoHome=$state.current.name;
+    // console.log($state.current.name);
 
 });

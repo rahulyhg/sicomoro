@@ -9,9 +9,15 @@
                     <span class="icon-bar box-shadow third-line {{thirdbar}}"></span>
                 </div>
             </div>
-            <div class="navbar-header">
+        
+            <div class="navbar-header"  ng-if="logoHome!='home'">
                 <a class="navbar-brand" ui-sref="home">
-                    <img src="img/logo.png" class="main-logo {{template.logoNone}}"  alt="logo" height="32">
+                    <img src="img/logo.png" class="main-logo"  alt="logo" height="32">
+                </a>
+            </div>
+             <div class="navbar-header" ng-if="logoHome=='home'">
+                <a class="navbar-brand mobi-logo" ui-sref="home">
+                    <img src="img/logo-home.png" class="main-logo"  alt="logo" height="50">
                 </a>
             </div>
         </div>

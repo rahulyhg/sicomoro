@@ -3,17 +3,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index:9;
-   cursor: pointer;
-    .create-btn{
-        width: 100%;
-         opacity:0;
-        #inputImage{
-                width: 100%;
-    height: 40px;
+    z-index: 9;
     cursor: pointer;
+    .create-btn {
+        width: 100%;
+        opacity: 0;
+        #inputImage {
+            width: 100%;
+            height: 40px;
+            cursor: pointer;
         }
-        span{
+        span {
             display: none;
         }
     }
@@ -41,22 +41,30 @@
         /* Microsoft Edge */
         color: black;
     }
+    .left-title{
+        top:10% ;
+        left: 0px;
+    }
 }
 
 .upload-main {
     position: relative;
 }
-.dateofbirth .form-control,.upload .form-control {
+
+.dateofbirth .form-control,
+.upload .form-control {
     border-radius: 0;
     border: none;
     background: transparent;
 }
 
-.dateofbirth,.upload {
+.dateofbirth,
+.upload {
     border-radius: 10px;
     background: #f5f5f5;
     border: 1px solid black;
 }
+
 .category-list {
     .form-control {
         height: 50px;
@@ -88,8 +96,8 @@ select {
     border: none;
     color: grey;
     padding: 0 20px;
-    &:focus{
-        outline:none;
+    &:focus {
+        outline: none;
     }
 }
 
@@ -112,29 +120,31 @@ select {
 .career-description {
     position: relative;
     margin: 50px 0 0 0;
+    .mouse-scrolldown {
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        font-size: 12px;
+        cursor: pointer;
+        animation: bounce 2s infinite;
+    }
 }
-.dateofbirth .calender-btn{
-background: transparent;
-border: none;
-i{
-    font-size: 25px;
-}
-&:hover,&:focus{
+
+.dateofbirth .calender-btn {
     background: transparent;
     border: none;
-    outline: none;
-}
-}
-.mouse-scrolldown{
-     position: absolute;
-    bottom: 0px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    font-size: 12px;
-    cursor: pointer;
-    animation: bounce 2s infinite;
+    i {
+        font-size: 25px;
+    }
+    &:hover,
+    &:focus {
+        background: transparent;
+        border: none;
+        outline: none;
+    }
 }

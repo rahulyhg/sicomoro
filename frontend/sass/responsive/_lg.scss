@@ -1,3 +1,16 @@
  @media (min-width: $screen-lg-min) {
      // Wide Desktop
  }
+  @media (min-width: 1366px) {
+
+.contact-main {
+
+   min-height: 100vh;
+}
+  .section-one {
+    
+        .section-one-content {
+            bottom:35%;
+        }
+  }
+ }

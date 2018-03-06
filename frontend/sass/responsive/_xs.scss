@@ -1,6 +1,14 @@
  @media (max-width: $screen-xs-max) {
      // Mobile
      //scss for common for pages
+     .left-title {
+    left: -10px;
+    font-size: 15px;
+}
+     .mobi-logo img{
+         width: 180px;
+         height: 35px;
+     }
      p {
          font-size: 14px;
      }
@@ -126,6 +134,9 @@
      }
      //end of scss for team page
      //scss for career page
+     .career-form .left-title {
+    left: -30px;
+}
      .career-heading p {
          font-size: 20px;
      }
