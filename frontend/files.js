@@ -27,7 +27,7 @@ module.exports = [
   "bower_components/angular-promise-buttons/dist/angular-promise-buttons.js",
   'bower_components/angularjs-imageupload-directive/public/javascripts/imageupload.js',
   'bower_components/highcharts-ng/dist/highcharts-ng.min.js',
-  // "bower_components/angular-loading-bar/build/loading-bar.min.js",
+  "bower_components/angular-loading-bar/build/loading-bar.min.js",
 
 
   //App.js
