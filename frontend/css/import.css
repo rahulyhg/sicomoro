@@ -10495,7 +10495,9 @@ a.color-black {
       height: 100%; }
 
 #particles-js {
-  background: #000;
+  background: #000 url("../img/home/animationbg.png");
+  background-position: center center;
+  background-size: cover;
   min-height: 100vh; }
 
 .about {
@@ -11002,6 +11004,10 @@ select {
     text-align: center; }
   .mission-top-text {
     padding: 20px 20px 20px 20px; }
+  .mb-10 {
+    margin-bottom: 8px; }
+  .mb-30 {
+    margin-bottom: 30px; }
   .section-three .img-team .team-name {
     font-size: 11px; }
   .associate-name h3,
