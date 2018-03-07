@@ -13,7 +13,6 @@ var myApp = angular.module('myApp', [
     'angularPromiseButtons',
     'toastr',
     'angular-loading-bar'
-    
 ]);
 
 // Define all the routes below
@@ -22,7 +21,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
  //for loader
     cfpLoadingBarProvider.includeSpinner = true;
     cfpLoadingBarProvider.includeBar = true;
-    cfpLoadingBarProvider.spinnerTemplate = '<div class="spinner-overlay"><img class="spinner" src="frontend/img/sicomoro.gif"/></div>';
+    cfpLoadingBarProvider.spinnerTemplate = '<div class="spinner-overlay"><img class="spinner" src="../img/sicomoro.gif"/></div>';
     //End of loader
     // for http request with session
     $httpProvider.defaults.withCredentials = true;
