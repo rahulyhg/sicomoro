@@ -37,6 +37,12 @@ myApp.controller('TeamCtrl', function ($scope, TemplateService, NavigationServic
           if (data == "varun") {
             $scope.team = "Varun hails from a business family specializing into fit outs for commercial spaces, windows and façade solutions for developers, as well as being actively involved in the trading of secondary market investments. Perhaps influenced by his family’s involvement in the financial markets over the last 25 years, Varun also pursued his keen interest in the field as a full time professional after having completed his undergraduate degree from HR College of commerce and economics, Mumbai. He also holds a post graduate degree – MSc in Entrepreneurship Management from the coveted European Business School, London."
         }
+         if (data == "kiran") {
+            $scope.team = "With over 14 years of experience in broking, depository and custodial services, Kiran brings with him rich process knowledge across various asset classes and handling various operating process across the gamut of client servicing. In his last stint, he played a critical role with Axis Bank, for over 10 years, as a Senior Manager in Custodial Services, where he was responsible for managing client relationships and settlements, reporting operational risks, customer queries and process optimization. Prior to Axis Bank, Kiran has also gained experience with reputed organizations like UTI Securities, Centurion Bank and Tata TD Waterhouse Securities."
+        }
+         if (data == "vaibhav") {
+            $scope.team = "Vaibhav has recently completed his Bachelors in Commerce from HR College of Commerce and Economics, Mumbai and is currently pursuing his Masters in Commerce. Prior to joining Sicomoro, he has interned with Kotak Mahindra Bank where he was part of the Wealth Management team handling HNI clients and was responsible for managing client relationships and product analysis. He intends to follow his interests in the Wealth Management spectrum and simultaneously pursue the CFA Course of Study to become a well-versed professional in the industry."
+        }
       
         $scope.teamModal = $uibModal.open({
             animation: true,

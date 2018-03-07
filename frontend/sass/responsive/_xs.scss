@@ -2,10 +2,10 @@
      // Mobile
      //scss for common for pages
      .left-title {
-    left: -10px;
-    font-size: 15px;
-}
-     .mobi-logo img{
+         left: -10px;
+         font-size: 15px;
+     }
+     .mobi-logo img {
          width: 180px;
          height: 35px;
      }
@@ -109,6 +109,12 @@
      }
      //end of scss for mission page
      //scss for team page
+     .mb-10 {
+         margin-bottom: 8px;
+     }
+     .mb-30 {
+         margin-bottom: 30px;
+     }
      .section-three .img-team .team-name {
          font-size: 11px;
      }
@@ -135,8 +141,8 @@
      //end of scss for team page
      //scss for career page
      .career-form .left-title {
-    left: -30px;
-}
+         left: -30px;
+     }
      .career-heading p {
          font-size: 20px;
      }
