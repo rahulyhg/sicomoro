@@ -1,32 +1,36 @@
 <header ng-controller="headerCtrl">
-    <nav class="navbar navbar-default navbar-fixed-top navbar-color-change">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="hamburger pointer pull-right" ng-click="getnav();">
-                <div class="color-white menu-title">Menu</div>
-                <div class="menu-line">
-                    <span class="icon-bar box-shadow {{onebar}}"></span>
-                    <span class="icon-bar box-shadow {{secondbar}}"></span>
-                    <span class="icon-bar box-shadow third-line {{thirdbar}}"></span>
-                </div>
-            </div>
-        
-            <div class="navbar-header"  ng-if="logoHome!='home'">
-                <a class="navbar-brand" ui-sref="home">
-                    <img src="img/logo.png" class="main-logo"  alt="logo" height="32">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a>
+                    <div class="hamburger pointer pull-right" ng-click="getnav();">
+                        <div class="color-white menu-title">Menu</div>
+                        <div class="menu-line">
+                            <span class="icon-bar box-shadow {{onebar}}"></span>
+                            <span class="icon-bar box-shadow {{secondbar}}"></span>
+                            <span class="icon-bar box-shadow third-line {{thirdbar}}"></span>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="navbar-header" ng-if="logoHome!='home'">
+                <a class="navbar-brand" ui-sref="home" style="height:auto">
+                    <img src="img/logo.png" class="main-logo" alt="logo" height="32">
                 </a>
             </div>
-             <div class="navbar-header" ng-if="logoHome=='home'">
-                <a class="navbar-brand mobi-logo" ui-sref="home">
-                    <img src="img/logo-home.png" class="main-logo"  alt="logo" height="50">
+            <div class="navbar-header" ng-if="logoHome=='home'">
+                <a class="navbar-brand mobi-logo" ui-sref="home" style="height:auto">
+                    <img src="img/logo-home.png" class="main-logo" alt="logo" height="">
                 </a>
             </div>
         </div>
     </nav>
-  <div class="backdrop" ng-class="{'backdropEnable':isBackdropActive}" ng-click="closeSideNav()" style=""></div>
+    <div class="backdrop" ng-class="{'backdropEnable':isBackdropActive}" ng-click="closeSideNav()" style=""></div>
     <div class="sidemenu {{getslide}}">
         <div class=" navbar-collapse">
             <div ng-include="template.menu" class="template menu"></div>
         </div>
     </div>
-  
 </header>
