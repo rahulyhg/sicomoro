@@ -22,10 +22,11 @@
             </div>
         </div>
     </nav>
-    <!--<div class="backdrop backdropEnable" ng-class="{'backdropEnable':isBackdropActive}" ng-click="closeSideNav()"></div>-->
+  <div class="backdrop" ng-class="{'backdropEnable':isBackdropActive}" ng-click="closeSideNav()" style=""></div>
     <div class="sidemenu {{getslide}}">
         <div class=" navbar-collapse">
             <div ng-include="template.menu" class="template menu"></div>
         </div>
     </div>
+  
 </header>
